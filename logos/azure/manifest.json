@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Microsoft Azure logo",
+    "file": "azure/azure.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg (Wikimedia Commons, File:Microsoft_Azure.svg)",
+    "notes": "Azure 'A' mark (2021 design). Commons credits Microsoft Corporation / azure.microsoft.com and marks it public domain. Symbol only, no wordmark."
+  },
+  {
+    "name": "Azure OpenAI Service",
+    "file": "azure/azure-openai.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/03438-icon-service-Azure-OpenAI.svg",
+    "notes": ""
+  },
+  {
+    "name": "Azure AI Foundry",
+    "file": "azure/azure-ai-foundry.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/035746832-icon-service-AI-Foundry.svg",
+    "notes": "The package calls it 'AI Foundry'. The older 'AI Studio' icon (03513-icon-service-AI-Studio.svg) is also in the package but not used. There are also Foundry sub-product icons (Foundry Agent Service, Foundry Models and others)."
+  },
+  {
+    "name": "Azure AI Document Intelligence",
+    "file": "azure/azure-document-intelligence.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/00819-icon-service-Form-Recognizers.svg",
+    "notes": "The package still calls it 'Form Recognizers' (the former name of Document Intelligence)."
+  },
+  {
+    "name": "Azure AI Vision",
+    "file": "azure/azure-ai-vision.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/00792-icon-service-Computer-Vision.svg",
+    "notes": "The package calls it 'Computer Vision'."
+  },
+  {
+    "name": "Azure AI services",
+    "file": "azure/azure-ai-services.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/10162-icon-service-Cognitive-Services.svg",
+    "notes": "The package calls it 'Cognitive Services' (the former name). The package has no icon named 'AI services'. An identical copy is in the web/ folder."
+  },
+  {
+    "name": "Azure Container Apps",
+    "file": "azure/azure-container-apps.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/other/02884-icon-service-Worker-Container-App.svg",
+    "notes": "Judgment call. V24 has no icon named exactly 'Container Apps'. This 'Worker Container App' icon (purple containers with a cyan orbit) is the design commonly used for Azure Container Apps. The alternative, other/02989-icon-service-Container-Apps-Environments.svg, is for the Environment resource (not used)."
+  },
+  {
+    "name": "Azure Container Registry",
+    "file": "azure/azure-container-registry.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/containers/10105-icon-service-Container-Registries.svg",
+    "notes": "The package calls it 'Container Registries'."
+  },
+  {
+    "name": "Azure Machine Learning",
+    "file": "azure/azure-machine-learning.svg",
+    "source": "Azure_Public_Service_Icons_V24.zip :: Azure_Public_Service_Icons/Icons/ai + machine learning/038470510-icon-service-Azure-Machine-Learning.svg",
+    "notes": "The newer Azure Machine Learning icon (purple tri-shape). The legacy blue flask icon is also in the package (10166-icon-service-Machine-Learning.svg) but not used."
+  }
+]

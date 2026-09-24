@@ -1,0 +1,324 @@
+[
+  {
+    "name": "Python",
+    "category": "Languages",
+    "file": "tech/python.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "notes": "Devicon python-original (colored)."
+  },
+  {
+    "name": "LangChain",
+    "category": "AI frameworks & tools",
+    "file": "tech/langchain.svg",
+    "source_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/698b2b26acc19233c104b1cd_logo.svg",
+    "notes": "Official icon (blue chain link on a near-black rounded square) from the langchain.com site header. Devicon has no LangChain icon."
+  },
+  {
+    "name": "LangGraph",
+    "category": "AI frameworks & tools",
+    "file": "tech/langgraph.svg",
+    "source_url": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/.github/images/logo-light.svg",
+    "notes": "Official logo from the langgraph repo. I cropped the icon+wordmark lockup to the 100x100 icon square and removed the 'langgraph' wordmark path. The shapes and colors are unchanged."
+  },
+  {
+    "name": "CrewAI",
+    "category": "AI frameworks & tools",
+    "file": "tech/crewai.png",
+    "source_url": "https://raw.githubusercontent.com/crewAIInc/crewAI/main/docs/images/crew_only_logo.png",
+    "notes": "Official colored 'crewai' wordmark, the same file docs.crewai.com uses for light and dark themes. PNG only, 375x114 with a transparent background. The repo favicon.svg is an old black outline mark, and Simple Icons only has a monochrome version."
+  },
+  {
+    "name": "Agno",
+    "category": "AI frameworks & tools",
+    "file": "tech/agno.svg",
+    "source_url": "https://docs.agno.com/favicon.svg",
+    "notes": "Official Agno icon (white mark on an orange-red #FF4017 rounded square) from the Agno docs site. The README wordmark (agno-public S3 logo-light/dark.svg) is plain black or white and includes an 'AgentOS' subtitle."
+  },
+  {
+    "name": "Model Context Protocol (MCP)",
+    "category": "AI frameworks & tools",
+    "file": "tech/model-context-protocol.svg",
+    "source_url": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/favicon.svg",
+    "notes": "Official MCP mark (white on a black rounded square) from the MCP spec/docs repo. It works on light and dark backgrounds. A full wordmark is in docs/logo/light.svg and dark.svg."
+  },
+  {
+    "name": "Hugging Face",
+    "category": "AI frameworks & tools",
+    "file": "tech/hugging-face.svg",
+    "source_url": "https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg",
+    "notes": "Official brand asset linked from huggingface.co/brand."
+  },
+  {
+    "name": "Streamlit",
+    "category": "AI frameworks & tools",
+    "file": "tech/streamlit.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
+    "notes": "Devicon streamlit-original (colored)."
+  },
+  {
+    "name": "OpenAI",
+    "category": "Model providers",
+    "file": "tech/openai.svg",
+    "source_url": "https://raw.githubusercontent.com/openai/openai-agents-python/main/docs/assets/logo.svg",
+    "notes": "Official Blossom mark from OpenAI's openai-agents-python docs. The source file is white, so I changed fill white to #000000 for light backgrounds. openai.com/brand returns 403 to scripted clients. Simple Icons no longer ships OpenAI."
+  },
+  {
+    "name": "OpenAI (white, for dark backgrounds)",
+    "category": "Model providers",
+    "file": "tech/openai-white.svg",
+    "source_url": "https://raw.githubusercontent.com/openai/openai-agents-python/main/docs/assets/logo.svg",
+    "notes": "The same official file, unmodified (white Blossom). Use it on dark backgrounds, e.g. with <picture> and prefers-color-scheme."
+  },
+  {
+    "name": "Anthropic",
+    "category": "Model providers",
+    "file": "tech/anthropic.svg",
+    "source_url": "https://www-cdn.anthropic.com/ae59ca4ca194dac9c9dc3bc78c5829468cb0e8af.zip",
+    "notes": "Official press kit (https://www.anthropic.com/press-kit redirects to this zip): 'Anthropic logos/Anthropic logos/2 Anthropic symbol/SVG/Anthropic symbol - Slate.svg'. Near-black, so it is invisible on dark backgrounds. Use anthropic-ivory.svg or claude.svg there."
+  },
+  {
+    "name": "Anthropic (ivory, for dark backgrounds)",
+    "category": "Model providers",
+    "file": "tech/anthropic-ivory.svg",
+    "source_url": "https://www-cdn.anthropic.com/ae59ca4ca194dac9c9dc3bc78c5829468cb0e8af.zip",
+    "notes": "Official press kit: 'Anthropic symbol - Ivory.svg', the light version of the A\\ symbol for dark backgrounds."
+  },
+  {
+    "name": "Claude",
+    "category": "Model providers",
+    "file": "tech/claude.svg",
+    "source_url": "https://www-cdn.anthropic.com/ae59ca4ca194dac9c9dc3bc78c5829468cb0e8af.zip",
+    "notes": "Official press kit: 'Claude logos/3 Claude Spark/SVG/Claude Spark - Clay.svg' (terracotta spark). Visible on light and dark backgrounds. The same zip also has ClaudeIcon-Rounded.svg and the Claude wordmark."
+  },
+  {
+    "name": "Google Gemini",
+    "category": "Model providers",
+    "file": "tech/google-gemini.svg",
+    "source_url": "https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg",
+    "notes": "Official Gemini gradient sparkle, referenced as the og:image of gemini.google.com and hosted on Google's gstatic CDN. The gradient is an embedded base64 JPEG masked by the sparkle shape. It renders correctly."
+  },
+  {
+    "name": "Meta Llama",
+    "category": "Model providers",
+    "file": "tech/meta-llama.svg",
+    "source_url": "https://static.xx.fbcdn.net/rsrc.php/yO/r/8S6ZPxM3N1I.svg",
+    "notes": "Meta infinity symbol (blue gradient) served on Meta's brand resource page (meta.com/brand/resources/meta/company-brand/). I found no official standalone Llama mark: llama.com and the meta-llama/llama-models repo only have a wordmark or photo banner. So this is the Meta logo, as instructed."
+  },
+  {
+    "name": "Qwen",
+    "category": "Model providers",
+    "file": "tech/qwen.svg",
+    "source_url": "https://assets.alicdn.com/g/qwenweb/qwen-chat-fe/0.2.91/static/images/qwen-logo.svg",
+    "notes": "Official Qwen logo from chat.qwen.ai. I cropped the icon+wordmark lockup to the 20x20 icon (the three #082DFF paths) and removed the black 'Qwen' wordmark paths. The Qwen3 README banner (logo_qwen3.png) uses a purple variant."
+  },
+  {
+    "name": "pandas",
+    "category": "ML / data",
+    "file": "tech/pandas.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+    "notes": "Devicon pandas-original. The bars are dark navy #130754. Brand color is very dark, so it has low contrast on dark backgrounds."
+  },
+  {
+    "name": "NumPy",
+    "category": "ML / data",
+    "file": "tech/numpy.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+    "notes": "Devicon numpy-original (colored)."
+  },
+  {
+    "name": "scikit-learn",
+    "category": "ML / data",
+    "file": "tech/scikit-learn.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+    "notes": "Devicon scikitlearn-original (colored). Includes the 'scikit learn' lettering."
+  },
+  {
+    "name": "statsmodels",
+    "category": "ML / data",
+    "file": "tech/statsmodels.svg",
+    "source_url": "https://raw.githubusercontent.com/statsmodels/statsmodels/main/docs/source/images/statsmodels-logo-v2-no-text.svg",
+    "notes": "Official statsmodels mark (blue dots, dark-grey curve) from the project repo, icon only. The curve is dark grey and weak on dark backgrounds. The same folder has statsmodels-logo-v2-horizontal.svg (with wordmark) and v3-no-text-light.svg (orange version for dark backgrounds)."
+  },
+  {
+    "name": "Matplotlib",
+    "category": "ML / data",
+    "file": "tech/matplotlib.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
+    "notes": "Devicon matplotlib-original (colored)."
+  },
+  {
+    "name": "Power BI",
+    "category": "ML / data",
+    "file": "tech/power-bi.svg",
+    "source_url": "https://content.powerapps.com/resource/powerbiwfe/images/spinner-PBI-logo.150b66cb3782a15fdd41.svg",
+    "notes": "Official Power BI product icon (yellow bars) served by the Power BI web app (app.powerbi.com). Devicon and Simple Icons have no Power BI icon, and Microsoft's Power Platform icon zip does not include it."
+  },
+  {
+    "name": "Django",
+    "category": "Backend",
+    "file": "tech/django.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+    "notes": "Devicon django-plain (Devicon has no 'original'). Official Django green #092E20. Brand color is very dark, so it has low contrast on dark backgrounds."
+  },
+  {
+    "name": "Django REST Framework",
+    "category": "Backend",
+    "file": "tech/django-rest-framework.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg",
+    "notes": "Devicon djangorest-original (the official 'django REST framework' wordmark with a maroon outline). DRF has no separate icon. Thin dark lines, so it reads poorly on dark backgrounds."
+  },
+  {
+    "name": "FastAPI",
+    "category": "Backend",
+    "file": "tech/fastapi.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+    "notes": "Devicon fastapi-original (teal)."
+  },
+  {
+    "name": "React",
+    "category": "Frontend",
+    "file": "tech/react.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "notes": "Devicon react-original."
+  },
+  {
+    "name": "Next.js",
+    "category": "Frontend",
+    "file": "tech/nextjs.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "notes": "Devicon nextjs-original. Black circle with white N, so it needs a light background or a white outline in dark mode."
+  },
+  {
+    "name": "Angular",
+    "category": "Frontend",
+    "file": "tech/angular.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+    "notes": "Devicon angular-original (current gradient Angular logo)."
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Databases",
+    "file": "tech/postgresql.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    "notes": "Devicon postgresql-original (colored)."
+  },
+  {
+    "name": "MongoDB",
+    "category": "Databases",
+    "file": "tech/mongodb.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    "notes": "Devicon mongodb-original (green leaf)."
+  },
+  {
+    "name": "Supabase",
+    "category": "Databases",
+    "file": "tech/supabase.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    "notes": "Devicon supabase-original (green bolt mark). Used as the managed PostgreSQL database for the Walker Sands engagement. Readable on light and dark backgrounds."
+  },
+  {
+    "name": "FAISS",
+    "category": "Databases",
+    "file": null,
+    "source_url": "https://github.com/facebookresearch/faiss",
+    "notes": "MISSING: FAISS has no official logo. The facebookresearch/faiss repo contains no image files, its Doxyfile has an empty PROJECT_LOGO, faiss.ai shows no logo, and it is not in Devicon or Simple Icons. I did not create one. Show it as text or reuse meta-llama.svg (Meta) with a label."
+  },
+  {
+    "name": "ChromaDB",
+    "category": "Databases",
+    "file": "tech/chromadb.svg",
+    "source_url": "https://raw.githubusercontent.com/chroma-core/chroma/main/docs/mintlify/images/favicon.svg",
+    "notes": "Official Chroma mark (overlapping blue/red/yellow circles) from the chroma repo docs, icon only. The full 'Chroma' wordmark is at docs/mintlify/images/light-logo.svg and dark-logo.svg."
+  },
+  {
+    "name": "Docker",
+    "category": "DevOps",
+    "file": "tech/docker.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    "notes": "Devicon docker-original (colored)."
+  },
+  {
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "file": "tech/kubernetes.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+    "notes": "Devicon kubernetes-original (colored)."
+  },
+  {
+    "name": "Terraform",
+    "category": "DevOps",
+    "file": "tech/terraform.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+    "notes": "Devicon terraform-original (purple)."
+  },
+  {
+    "name": "Git",
+    "category": "DevOps",
+    "file": "tech/git.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "notes": "Devicon git-original (orange-red)."
+  },
+  {
+    "name": "Twilio",
+    "category": "Integrations & platforms",
+    "file": "tech/twilio.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twilio/twilio-original.svg",
+    "notes": "Devicon twilio-original (red)."
+  },
+  {
+    "name": "Stripe",
+    "category": "Integrations & platforms",
+    "file": "tech/stripe.svg",
+    "source_url": "https://assets.stripeassets.com/fzn2n1nzq965/7q0dJGs6fRS1LRmMpChoAF/87def4edfbb7fd5aef4ab9baf904b2db/Stripe_logo_kit.zip",
+    "notes": "Official Stripe logo kit from stripe.com/newsroom/information: 'asset-wordmark/Stripe wordmark - Blurple.svg' (#533AFD). The kit only has wordmarks. The square app icon is at https://images.stripeassets.com/fzn2n1nzq965/1hgcBNd12BfT9VLgbId7By/01d91920114b124fb4cf6d448f9f06eb/favicon.svg."
+  },
+  {
+    "name": "Firebase",
+    "category": "Integrations & platforms",
+    "file": "tech/firebase.svg",
+    "source_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    "notes": "Devicon firebase-original (colored flame)."
+  },
+  {
+    "name": "Google Drive",
+    "category": "Integrations & platforms",
+    "file": "tech/google-drive.svg",
+    "source_url": "https://www.gstatic.com/images/branding/productlogos/drive_2020q4/v10/192px.svg",
+    "notes": "Official Google Drive product logo (2020 four-color triangle) from Google's gstatic branding CDN."
+  },
+  {
+    "name": "Microsoft Outlook",
+    "category": "Integrations & platforms",
+    "file": "tech/microsoft-outlook.svg",
+    "source_url": "https://res.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/outlook_48x1.svg",
+    "notes": "Official Microsoft Fluent product icon from Microsoft's Office CDN. This is the 2019-era Fluent design, the one most people know. Microsoft started rolling out a refreshed M365 icon set in late 2025."
+  },
+  {
+    "name": "Microsoft SharePoint",
+    "category": "Integrations & platforms",
+    "file": "tech/microsoft-sharepoint.svg",
+    "source_url": "https://res.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/sharepoint_48x1.svg",
+    "notes": "Official Microsoft Fluent product icon from Microsoft's Office CDN (same design generation as the Outlook icon)."
+  },
+  {
+    "name": "WhatsApp",
+    "category": "Integrations & platforms",
+    "file": "tech/whatsapp.svg",
+    "source_url": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/whatsapp.svg",
+    "notes": "Simple Icons (v16.32.0) WhatsApp glyph with fill=\"#25D366\" added on the root <svg>, the brand green from the simple-icons data. The official brand pages (whatsappbrand.com and meta.com/brand/resources/whatsapp/) return errors to scripted clients."
+  },
+  {
+    "name": "Firecrawl",
+    "category": "Integrations & platforms",
+    "file": "tech/firecrawl.svg",
+    "source_url": "https://www.firecrawl.dev/brand/firecrawl-logo.svg",
+    "notes": "Official Firecrawl flame (#FA5D19) from firecrawl.dev/brand. Icon only. Wordmark versions are at /brand/firecrawl-wordmark.svg and /brand/firecrawl-light-wordmark.svg."
+  },
+  {
+    "name": "NVIDIA",
+    "category": "Integrations & platforms",
+    "file": "tech/nvidia.svg",
+    "source_url": "https://www.nvidia.com/content/nvidiaGDC/us/en_US/about-nvidia/legal-info/logo-brand-usage/_jcr_content/root/responsivegrid/nv_container_392921705/nv_container/nv_image.coreimg.svg/1776076920288/nvidia-logo-vert.svg",
+    "notes": "Official vertical NVIDIA logo (green eye above a black 'NVIDIA' wordmark) from NVIDIA's Logo & Brand Usage page. The black wordmark disappears on dark backgrounds, though the green eye stays visible. A horizontal version is nvidia-logo-horz.svg on the same page."
+  }
+]

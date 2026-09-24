@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Bridgetown Consulting Group",
+    "file": "companies/bridgetown-consulting-group.png",
+    "source_url": "https://bcgnj.com/wp-content/uploads/2026/04/Bcg-logo-1-e1775856460159.png",
+    "kind": "full-logo",
+    "notes": "Header logo from bcgnj.com (site footer confirms Bridgetown Consulting Group, Piscataway, NJ). 960x238 PNG, transparent background, black text, so use it on a light background (the text disappears on dark)."
+  },
+  {
+    "name": "Atlas Systems",
+    "file": "companies/atlas-systems.png",
+    "source_url": "https://www.atlassystems.com/hubfs/Atlas_logo_new.svg",
+    "kind": "full-logo",
+    "notes": "Header logo from atlassystems.com (the site offers TPRM, which confirms the match). The official 'SVG' is only a wrapper around a 900x396 PNG, and its clip path cuts off the left edge, so the embedded PNG was extracted unchanged. Transparent background. 'SYSTEMS' is dark text, so use a light background."
+  },
+  {
+    "name": "Bluekyte.AI",
+    "file": "companies/counsello-ai.jpg",
+    "source_url": "https://media.licdn.com/dms/image/v2/D560BAQFCdXjgHtD0jA/company-logo_200_200/company-logo_200_200/0/1695406161421?e=2147483647&v=beta&t=DdC0hJFr3jiTxCTc12thAwN35u-UDWPq4CoLv6BFpSc",
+    "kind": "full-logo",
+    "notes": "Logo of Counsello AI, the product built at Bluekyte.AI (legal entity: Nostradamus Technologies Private Limited). Taken from the og:image of https://www.linkedin.com/company/counsello-ai/ . 200x200 JPG: white lawyer's bands in a blue speech bubble. bluekyte.ai and counsello.ai are both offline."
+  },
+  {
+    "name": "AIML Data Analytics Solutions Pvt. Ltd. / Open Data Fabric",
+    "file": "companies/open-data-fabric.png",
+    "source_url": "https://opendatafabric.com/odf-logo-transparent.png",
+    "kind": "full-logo",
+    "notes": "Same brand, not two logos. The LinkedIn page 'AIML Analytics Solutions Pvt Ltd (OpenDataFabric)' links to opendatafabric.com and uses this same Open Data Fabric logo. Header logo, 3722x5000 PNG (tall: icon above wordmark, 870 KB), bright green on transparent, readable on light and dark backgrounds. There is also a black-on-white version at https://opendatafabric.com/ODFLogo-BlackonWhite.png."
+  },
+  {
+    "name": "Statinfer Software Solutions LLP",
+    "file": "companies/statinfer.png",
+    "source_url": "https://statinfer.com/logo.png",
+    "kind": "full-logo",
+    "notes": "Header logo from statinfer.com ('Data Science, AI & GenAI Corporate Training'). 816x188 PNG, transparent, colour, readable on light and dark backgrounds."
+  },
+  {
+    "name": "MedTourEasy",
+    "file": "companies/medtoureasy.jpg",
+    "source_url": "https://www.medtoureasy.com/wp-content/uploads/2024/09/square_mte.jpg",
+    "kind": "full-logo",
+    "notes": "The site header uses plain text, so this is the brand's 'MTE' lettermark: the 750x750 source image behind the site icon, and the same mark as the LinkedIn logo. JPG on a white background with generous padding, so crop it or set a size in Markdown. A black-only vector version exists at https://www.medtoureasy.com/wp-content/uploads/2024/09/square_mte.svg (it drops the red swoosh)."
+  },
+  {
+    "name": "Villageagro.com",
+    "file": "companies/villageagro.jpg",
+    "source_url": "https://media.licdn.com/dms/image/v2/D560BAQHXBYi8PSM9gA/company-logo_200_200/B56Zg_UX6gH0AM-/0/1753408963853?e=2147483647&v=beta&t=Fn9E75s_ilPP37YW-Xno6cRqCIHmhwNnsctErp3lSgo",
+    "kind": "full-logo",
+    "notes": "villageagro.com no longer works (it redirects to a parked 'lander' page). This is the official LinkedIn company logo (Villageagro.com, Hyderabad): white pin-leaf mark plus 'Villageagro' wordmark on a green square. Only 200x200 JPG. The archived 2021 site's header logo was a 240px white-only image, so it was not used. The site's 512px green pin icon (no wordmark) is archived at https://web.archive.org/web/20210430100232id_/https://villageagro.com/wp-content/uploads/2021/02/cropped-VA-icon-2.png."
+  },
+  {
+    "name": "Mazagon Dock Shipbuilders Ltd.",
+    "file": "companies/mazagon-dock-shipbuilders.svg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Mazagon_Dock_Shipbuilders.svg",
+    "kind": "full-logo",
+    "notes": "Official MDL gear emblem (the logo has no separate wordmark), vector, from the English Wikipedia article (a local non-free file, not Commons). The SVG's built-in size is small (87x90), so set a width in Markdown. mazagondock.in's own header logo.svg currently shows a 'Celebrating 250 Years' anniversary variant with an embedded raster, so it was not used."
+  },
+  {
+    "name": "Masai School",
+    "file": "companies/masai-school.png",
+    "source_url": "https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp",
+    "kind": "full-logo",
+    "notes": "Current masaischool.com navbar logo ('masai' wordmark with red accent). Converted from WebP to PNG losslessly, no other changes. Only 342x120, the largest official version available (no SVG or Wikimedia file). Black text on transparent, so use a light background."
+  },
+  {
+    "name": "Balihans",
+    "file": "companies/balihans-navy.jpg",
+    "source_url": "https://media.licdn.com/dms/image/v2/D560BAQGE-nji2fWCDg/company-logo_200_200/company-logo_200_200/0/1730088923247/balihans_logo?e=2147483647&v=beta&t=Nt5mhs4QQoQDsvMk-D9aJcJXYbZJ8Wlc3oPIZ7MneNA",
+    "kind": "full-logo",
+    "notes": "Official LinkedIn company logo: white wordmark on a navy square, 200x200 JPG. Use on light backgrounds."
+  },
+  {
+    "name": "Balihans (white, for dark backgrounds)",
+    "file": "companies/balihans.png",
+    "source_url": "https://res.cloudinary.com/dnijlfi48/image/upload/v1734432935/Balihans_-_logo_off-white_m6wkoi.png",
+    "kind": "full-logo",
+    "notes": "WHITE logo on transparent: invisible on a white page, needs a dark background. This is the only logo image balihans.com uses (its footer/header asset, served as PNG instead of WebP from the same Cloudinary asset); 1000x400. For light pages, the LinkedIn logo (white wordmark on a navy square, 200x200) is at https://media.licdn.com/dms/image/v2/D560BAQGE-nji2fWCDg/company-logo_200_200/company-logo_200_200/0/1730088923247/balihans_logo?e=2147483647&v=beta&t=Nt5mhs4QQoQDsvMk-D9aJcJXYbZJ8Wlc3oPIZ7MneNA."
+  },
+  {
+    "name": "Walker Sands",
+    "file": "companies/walker-sands.svg",
+    "source_url": "https://www.walkersands.com/wp-content/uploads/2023/09/walker-sands-logo-full-1.svg",
+    "kind": "full-logo",
+    "notes": "Header logo from walkersands.com (B2B marketing and PR agency). True vector SVG, orange mark plus dark navy wordmark, so use a light background."
+  },
+  {
+    "name": "ShaktyAI",
+    "file": "companies/shakty-ai.png",
+    "source_url": "https://mhhmucxengkrgkwpecee.supabase.co/storage/v1/object/public/img/logo/shaktylogo.png",
+    "kind": "icon",
+    "notes": "The lotus-mandala mark that shakty.ai's main header shows next to the live-text 'ShaktyAI' wordmark (also its twitter:image and favicon). There is no image with the wordmark. 500x500 PNG, transparent, readable on light and dark backgrounds. The in-app sidebar uses a different orange-lotus-on-black icon (https://www.shakty.ai/assets/shakty-logo-C_Qi2fh-.png)."
+  },
+  {
+    "name": "MentionNow",
+    "file": "companies/mentionnow.svg",
+    "source_url": "https://www.mentionnow.io/__l5e/assets-v1/20b97615-c994-401e-bd8f-5a221dcabda4/logo-horizontal-light.svg",
+    "kind": "full-logo",
+    "notes": "Confirmed by Srinivas as his startup's site (mentionnow.io). Horizontal logo for light backgrounds: yellow/grey bars plus dark 'MentionNow' wordmark. The wordmark is an SVG <text> element using the Inter font, so it falls back to a system sans-serif where Inter is not installed."
+  },
+  {
+    "name": "Indian Institute of Technology Madras (IIT Madras)",
+    "file": "companies/iit-madras.svg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg",
+    "kind": "full-logo",
+    "notes": "Official colour seal (the name is in the ring), vector, from the English Wikipedia article (a local non-free file). Solid colours, readable on light and dark backgrounds. A black-and-white version is on Commons: https://upload.wikimedia.org/wikipedia/commons/f/f0/IIT_Madras_Logo_%28Black_and_White%29.svg."
+  }
+]

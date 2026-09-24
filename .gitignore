@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# scratch files from local previews
+site-prototype/.peek*.html
+site-prototype/.nocss.html
+
+# python
+__pycache__/
+*.pyc
