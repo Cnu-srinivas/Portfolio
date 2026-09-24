@@ -1,0 +1,23 @@
+# Search engines and AI answer engines are welcome.
+User-agent: *
+Allow: /
+
+# Named explicitly so there is no doubt: these fetch pages when someone asks
+# a question about me, which is the point of this site.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

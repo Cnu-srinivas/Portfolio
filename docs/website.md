@@ -1,15 +1,15 @@
-# Site prototype — step 1: the homepage
+# The website (`web/`)
 
 A plain HTML + CSS prototype of the client-facing portfolio homepage, so you can see and feel the design before the Next.js build. It follows `../portfolio_blueprint_2026-09-22.md` (design, content) and `../portfolio_global_plan_2026-09-22.md` (offers, trust, regions).
 
 ## Open it
 
-- **Quickest:** double-click `index.html`.
-- **Or serve it locally.** Run the server from the **Portfolio** folder, not from `site-prototype`, because the logos are loaded from `../logos`:
+- **Quickest:** double-click `web/index.html`.
+- **Or serve it locally:**
   ```bash
-  cd ~/Documents/cnu/Portfolio
+  cd ~/Documents/cnu/Portfolio/web
   python3 -m http.server 8000
-  # then open http://localhost:8000/site-prototype/
+  # then open http://localhost:8000/
   ```
 
 The sun button in the header switches between the dark ("deep water") and light ("drafting film") themes. The page remembers your choice.
@@ -17,13 +17,29 @@ The sun button in the header switches between the dark ("deep water") and light 
 ## Files
 
 ```
-site-prototype/
-  index.html      all homepage content, section by section (search for "=====")
-  css/styles.css  the design system: colour tokens at the top, then one block per section
-  js/main.js      theme toggle, mobile menu, prototype form message (the page works without it)
+web/                 ← everything here, and only this, is deployed
+  index.html         all homepage content, section by section (search for "=====")
+  css/styles.css     the design system: colour tokens at the top, then one block per section
+  js/main.js         theme toggle, mobile menu, prototype form message
+  images/profile.jpg your photo
+  logos/             copies of the logos the page uses
+  robots.txt         search engines and AI answer engines welcomed explicitly
+  vercel.json        clean URLs, security headers, asset caching
 ```
 
-Logos come straight from `../logos/` (the same files as your logo library), so there's only one copy of each.
+`logos/` at the repo root stays the master library, with its manifests. After adding or swapping a logo on the page, run:
+
+```bash
+python3 tools/sync_logos.py
+```
+
+That copies the referenced logos into `web/logos/` and deletes any that the page no longer uses.
+
+## Deploying to Vercel
+
+Import the repo, then set **Root Directory: `web`**. Framework preset "Other", no build command, no output directory. Everything outside `web/` (your portfolio source, the plan documents, the logo library) is then never deployed and never reachable by URL.
+
+Deploy a branch first to get a preview URL, and keep it unlisted until the permission questions below are settled.
 
 ## Homepage sections, in order
 
