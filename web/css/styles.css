@@ -29,7 +29,7 @@
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-  --max: 1200px;
+  --max: 1400px;
   --gutter: 20px;
   --radius: 8px;
   color-scheme: dark;
@@ -98,7 +98,7 @@ h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; }
 p { margin: 0; }
 ul, ol { margin: 0; }
 
-.wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
+.wrap { max-width: var(--max); margin: 0 auto; padding-inline: clamp(20px, 3vw, 44px); }
 .mono { font-family: var(--mono); }
 .eyebrow {
   font: 500 12px/1.3 var(--mono);
@@ -277,6 +277,7 @@ ul, ol { margin: 0; }
 
 /* ---------- 8. Use cases ---------- */
 .usecases { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+@media (min-width: 1080px) { .usecases { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .usecase { background: var(--surface); padding: 22px; display: grid; gap: 10px; align-content: start; }
 .usecase h3 { font-size: 17.5px; line-height: 1.25; font-weight: 680; font-stretch: 104%; }
 .usecase .proofline { font-size: 14.5px; color: var(--ink-2); }
@@ -377,6 +378,7 @@ ul, ol { margin: 0; }
 .steps b { font-family: var(--display); font-size: 18px; font-weight: 680; }
 .steps span { font-size: 14.5px; color: var(--ink-2); }
 .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px; }
+@media (min-width: 1080px) { .terms { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .term { padding: 18px 0; border-top: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
 .term h3 { font: 600 12px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .term ul { list-style: none; padding: 0; display: grid; gap: 6px; font-size: 14.5px; color: var(--ink-2); }
