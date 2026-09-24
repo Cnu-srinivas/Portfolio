@@ -1825,6 +1825,8 @@ That allows me to think beyond the model itself and build complete systems cover
 
 🔗 **LinkedIn:** www.linkedin.com/in/srinivas77777
 
+💻 **GitHub:** github.com/Cnu-srinivas
+
 ### Current Professional Focus
 
 - Senior AI Engineering
