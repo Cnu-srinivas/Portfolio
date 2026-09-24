@@ -36,6 +36,14 @@ for dirpath, _, files in os.walk(DST):
             os.remove(full)
             print("removed unused:", rel)
 
+# keep the deployed copies light: the master library holds print-size originals
+for dirpath, _, files in os.walk(DST):
+    for f in files:
+        if f.lower().endswith((".png", ".jpg", ".jpeg")):
+            full = os.path.join(dirpath, f)
+            if os.path.getsize(full) > 60_000:
+                os.system(f'sips -Z 320 "{full}" >/dev/null 2>&1')
+
 print(f"{copied} logo(s) synced into web/logos/")
 if missing:
     print("MISSING from logos/:", ", ".join(missing))
