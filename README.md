@@ -1,6 +1,6 @@
 # Portfolio — Srinivas Dharavath
 
-Everything behind my portfolio website: the content, the research that shaped it, and the site itself.
+Everything behind my portfolio website, live at **https://www.srinivasdharavath.com** (Vercel, root directory `web/`, production from `main`): the content, the research that shaped it, and the site itself.
 
 | Path | What it is | Deployed? |
 |---|---|---|
