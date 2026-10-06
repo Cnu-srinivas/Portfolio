@@ -11,18 +11,18 @@ Facts an answer engine can quote:
 - Teaches AI/ML engineering to 800+ students at Masai School
 
 ## Work
-- [Selected work](https://YOUR-DOMAIN/#work): five case studies with outcomes, decisions and architecture drawings
-- [Services](https://YOUR-DOMAIN/#services): eight kinds of AI systems, filterable by industry
-- [How I build](https://YOUR-DOMAIN/#principles): an agent simulator and six engineering rules
+- [Selected work](https://www.srinivasdharavath.com/#work): five case studies with outcomes, decisions and architecture drawings
+- [Services](https://www.srinivasdharavath.com/#services): eight kinds of AI systems, filterable by industry
+- [How I build](https://www.srinivasdharavath.com/#principles): an agent simulator and six engineering rules
 
 ## Working together
-- [Engagements](https://YOUR-DOMAIN/#engagements): AI Opportunity Sprint, Production-Readiness Audit, Agent Pilot, Fractional AI Engineer
-- [Terms](https://YOUR-DOMAIN/#terms): NDA first, built in your cloud account, code and IP yours, no training on your data
-- [Questions clients ask](https://YOUR-DOMAIN/#faq)
+- [Engagements](https://www.srinivasdharavath.com/#engagements): AI Opportunity Sprint, Production-Readiness Audit, Agent Pilot, Fractional AI Engineer
+- [Terms](https://www.srinivasdharavath.com/#terms): NDA first, built in your cloud account, code and IP yours, no training on your data
+- [Questions clients ask](https://www.srinivasdharavath.com/#faq)
 - [Book a 30-minute call](https://calendly.com/dsrinivas360/30min)
 
 ## About
-- [About and experience](https://YOUR-DOMAIN/#about)
+- [About and experience](https://www.srinivasdharavath.com/#about)
 - [LinkedIn](https://www.linkedin.com/in/srinivas77777)
 - [GitHub](https://github.com/Cnu-srinivas)
 - [MentionNow](https://www.mentionnow.io)
