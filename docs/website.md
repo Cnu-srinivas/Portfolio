@@ -76,7 +76,6 @@ These are facts only you have. Everything else on the page comes from your portf
 | LLaMA case | how you evaluated it (base → tuned score) |
 | HRMS | the framework, database and cloud it runs on |
 | Footer | business name and entity type |
-| Contact | your Cal.com (or Calendly) booking link, in the `data-placeholder` button |
 | Testimonials | real quotes only, with written permission |
 | Five "~" figures | the PTBuddy latency, cost and contract figures and the voice completion and response figures are expected values for the architecture, not measurements (portfolio source, section 37 G). The page carries no disclaimer about this, by your decision on 6 Oct 2026, so read the real numbers off CloudWatch and the call logs before LinkedIn traffic arrives: a client's first question is "how did you measure that?" |
 
@@ -88,6 +87,7 @@ These are facts only you have. Everything else on the page comes from your portf
 - [ ] MentionNow co-founders agree to the free AI Visibility Snapshot offer
 - [ ] Replace `YOUR-DOMAIN` in the structured data and the Open Graph tags in `<head>` (og:image must be an absolute URL or LinkedIn shows no picture)
 - [ ] After deploying, paste the URL into the LinkedIn Post Inspector (linkedin.com/post-inspector) once, so LinkedIn fetches the new preview card
+- [x] Booking: every "Book a call" button opens `calendly.com/dsrinivas360/30min` in a new tab, tagged `utm_source=portfolio` so Calendly shows which bookings came from the site
 - [ ] Connect the contact form (it only shows a message in this prototype)
 
 ## Next steps

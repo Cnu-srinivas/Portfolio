@@ -330,5 +330,5 @@
     status.textContent = 'Prototype: this form will be connected in the Next.js build. For now, email dsrinivas360@gmail.com.';
   });
 
-  // (booking button opens an email until a Cal.com link exists)
+  // (booking buttons open the Calendly page: https://calendly.com/dsrinivas360/30min)
 })();
