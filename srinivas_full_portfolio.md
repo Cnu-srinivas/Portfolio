@@ -2146,7 +2146,7 @@ Removed rather than invented, because there was no basis for a figure: **emails 
 | MCP card | Emails and transcripts a day · the hours-per-week baseline behind ~70% |
 | Voice card | Calls completed |
 | LLaMA card | Evaluation method and result |
-| Contact | Booking link (the button currently opens an email to you) |
+| Contact | Done 6 Oct 2026: every "Book a call" button opens calendly.com/dsrinivas360/30min |
 | `<head>` | Domain, for the structured data |
 | Testimonials | Three real quotes with permission. The section is hidden until then. |
 | HRMS | Framework, database and cloud |
