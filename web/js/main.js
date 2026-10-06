@@ -227,7 +227,7 @@
 
     function resetSim() {
       timers.forEach(clearTimeout); timers = [];
-      Object.keys(stages).forEach(function (k) { stages[k].classList.remove('run', 'ok', 'fail', 'warn', 'skip'); });
+      Object.keys(stages).forEach(function (k) { stages[k].classList.remove('run', 'ok', 'fail', 'warn', 'skipped'); });
       arrows.forEach(function (a) { a.classList.remove('hot'); });
       each('#rules li', function (li) { li.classList.remove('glow'); });
       log.innerHTML = '';
@@ -249,7 +249,7 @@
       log.scrollTop = log.scrollHeight;
     }
     function finish(sc) {
-      sc.skip.forEach(function (k) { stages[k].classList.add('skip'); });
+      sc.skip.forEach(function (k) { stages[k].classList.add('skipped'); });
       sc.rules.forEach(function (r) { var li = document.querySelector('#rules li[data-r="' + r + '"]'); if (li) li.classList.add('glow'); });
       tele('lat').textContent = sc.tele[0]; tele('tok').textContent = sc.tele[1]; tele('cost').textContent = sc.tele[2];
       var out = tele('out'); out.textContent = sc.tele[3]; out.className = sc.tele[4];
