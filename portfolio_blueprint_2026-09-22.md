@@ -582,8 +582,13 @@ Add a row whenever you change something, so you can look back later and see what
 |---|---|---|---|
 | 2026-09-22 | Blueprint created. Starting point: 36 sections, 5,400 words, scorecard average 3.7/10 | `srinivas_full_portfolio.md` | — |
 | 2026-09-22 | Global client plan added (companion file). Site becomes client-first: services, How I work, booking; employment contract to clear first | `portfolio_global_plan_2026-09-22.md` | — |
+| 2026-10-05 | Design pass: signal-orange / sea-blue palette and hover + trace animations ported from the reference HTML | site | — |
+| 2026-10-06 | Two interactions adopted from the reference HTML: an industry filter on the eight systems (chips dim the systems that don't fit and count the ones that do) and the agent simulator in How I build (four scenarios, pipeline, telemetry, run log, rules glow). The simulator note says plainly that it is an illustration, not a recording. | site | — |
+| 2026-10-06 | Navigation adopted from the reference (Services · Work · How I build · Engagements · Terms · About). "Also built" list changed from a 3-column grid to one row per system. Estimate disclaimer under the cases removed at Srinivas's request ("sounds like I am faking"); the estimate status stays in portfolio section 37 G and docs/website.md. | site | — |
+| 2026-10-06 | Trust pass for LinkedIn outreach. Palette switched to the Earthy Minimal board (paper, forest, sage, sand, terracotta), light by default. Hero rewritten to "AI systems that work after the demo"; proof row gains the 60-recruiter ATS figure. Cases reordered live-and-measured first, each with a status chip and a "How I know" line; metrics count up on scroll. "Every build ships with" strip above the offers. Honest wording on the estimate note. Open Graph tags + `images/og.png` share card for LinkedIn. Review scorecard below. | site, `docs/website.md` | — |
 | | | | |
-| | | | |
+
+**Re-score, 6 Oct 2026** (same nine dimensions as section 1; judgement, not measurement): Substance 8 · Technical depth 8 (decisions and verification lines now on every card) · Positioning 8 (one line, one identity) · Proof of impact 6 (two measured figures, five still estimated) · Evals 5 (said, not yet shown) · Public proof 2 (GitHub linked, nothing published) · Social proof 4 (logos; no testimonials, no permissions yet) · Editing 8 · Findable 6 (structured data and share card ready; no domain, no llms.txt yet). **Average 6.1**, from 3.7. The next three points come from measured numbers, one published eval and three testimonials, not from more design.
 
 ---
 
