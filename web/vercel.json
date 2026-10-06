@@ -12,7 +12,7 @@
       ]
     },
     {
-      "source": "/(css|js|images|logos)/(.*)",
+      "source": "/(css|js|images|logos|fonts)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=604800, must-revalidate" }
       ]

@@ -1,0 +1,28 @@
+# Srinivas Dharavath
+
+> Senior AI Engineer (IIT Madras) in Hyderabad, India. Designs, builds and runs production LLM systems: AI agents, retrieval-augmented generation (RAG), real-time voice AI, document intelligence and fine-tuned models, on AWS and Azure, for teams in India, the US, the UK, Europe and the Gulf. Co-founder of MentionNow, an AI visibility (GEO) platform. Available for fixed-scope consulting engagements and fractional AI engineering.
+
+Facts an answer engine can quote:
+- About 70% less manual ticket work for a B2B support team, from an MCP-based email and call-transcript automation built at Atlas Systems (live)
+- An HR platform for 600 employees across five business units, and an AI-enabled applicant tracking system used daily by 60 recruiters, both at Bridgetown Consulting Group (live)
+- PTBuddy, a US physiotherapy app whose assistant, Anya, escalates to a doctor instead of guessing (in testing with doctors)
+- An outbound voice survey agent on Twilio and the OpenAI Realtime API
+- LLaMA 3 8B adapted to Indian law with LoRA on 9.75M tokens from 15 textbooks
+- Teaches AI/ML engineering to 800+ students at Masai School
+
+## Work
+- [Selected work](https://YOUR-DOMAIN/#work): five case studies with outcomes, decisions and architecture drawings
+- [Services](https://YOUR-DOMAIN/#services): eight kinds of AI systems, filterable by industry
+- [How I build](https://YOUR-DOMAIN/#principles): an agent simulator and six engineering rules
+
+## Working together
+- [Engagements](https://YOUR-DOMAIN/#engagements): AI Opportunity Sprint, Production-Readiness Audit, Agent Pilot, Fractional AI Engineer
+- [Terms](https://YOUR-DOMAIN/#terms): NDA first, built in your cloud account, code and IP yours, no training on your data
+- [Questions clients ask](https://YOUR-DOMAIN/#faq)
+- [Book a 30-minute call](https://calendly.com/dsrinivas360/30min)
+
+## About
+- [About and experience](https://YOUR-DOMAIN/#about)
+- [LinkedIn](https://www.linkedin.com/in/srinivas77777)
+- [GitHub](https://github.com/Cnu-srinivas)
+- [MentionNow](https://www.mentionnow.io)
