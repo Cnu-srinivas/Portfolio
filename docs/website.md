@@ -25,6 +25,9 @@ web/                 ← everything here, and only this, is deployed
   js/main.js         theme toggle, mobile menu, animations (scroll reveal, architecture trace,
                      hero waterline, count-ups), prototype form message
   images/profile.jpg your photo
+  fonts/             DM Sans and IBM Plex Mono, self-hosted (latin subset)
+  sitemap.xml        one URL for now; lastmod set by tools/site_meta.py
+  llms.txt           Markdown summary for AI answer engines
   images/og.png      the 1200x630 preview card LinkedIn, Slack and WhatsApp show when the site is shared
                      (rebuild with: python3 tools/make_og_image.py)
   logos/             copies of the logos the page uses
@@ -52,7 +55,7 @@ Services (`#services`, the eight systems) · Work (`#work`) · How I build (`#pr
 
 ## Homepage sections, in order
 
-Hero → Worked with → What I can build for you (with an industry filter: chips above the grid dim the systems that don't fit and count the ones that do; each card's `data-fits` attribute lists its industries, so adding one is a one-word edit) → Selected work (5 case studies + more) → How I build (an agent simulator: four scenarios run a PTBuddy-style assistant through its request path, with telemetry, a run log and the six rules that light up; the scenario data sits at the top of the simulator block in `js/main.js`) → Ways to work together (what every build ships with, then the offers) → How I work → Working hours → About (+ photo, timeline, tools) → Contact
+Hero → Worked with → What I can build for you (with an industry filter: chips above the grid dim the systems that don't fit and count the ones that do; each card's `data-fits` attribute lists its industries, so adding one is a one-word edit) → Selected work (5 case studies + more) → How I build (an agent simulator: four scenarios run a PTBuddy-style assistant through its request path, with telemetry, a run log and the six rules that light up; the scenario data sits at the top of the simulator block in `js/main.js`) → Ways to work together (what every build ships with, then the offers) → How I work → Questions clients ask (FAQ) → Working hours → About (+ photo, timeline, tools) → Contact
 
 Below the five cases, "Also built" lists the other systems one per row (sector, name, one line), so it takes any number of entries; add a `<li>` with a `<small>`, a `<b>` and a `<span>`.
 
@@ -79,13 +82,42 @@ These are facts only you have. Everything else on the page comes from your portf
 | Testimonials | real quotes only, with written permission |
 | Five "~" figures | the PTBuddy latency, cost and contract figures and the voice completion and response figures are expected values for the architecture, not measurements (portfolio source, section 37 G). The page carries no disclaimer about this, by your decision on 6 Oct 2026, so read the real numbers off CloudWatch and the call logs before LinkedIn traffic arrives: a client's first question is "how did you measure that?" |
 
+## SEO and GEO
+
+What is in place (6 Oct 2026):
+
+- **Static HTML**: every word is in the page without JavaScript, which is what GPTBot, ClaudeBot and PerplexityBot read. `robots.txt` names the AI search bots explicitly and points at `sitemap.xml`.
+- **Head**: a 63-character title, a 160-character description, canonical, robots (`max-image-preview:large`), Open Graph and Twitter tags, the share card, a favicon.
+- **Structured data**: WebSite, ProfilePage (dateCreated, dateModified), Person (worksFor, alumniOf, knowsAbout, sameAs, the four engagements as offers, the Calendly schedule action), the MentionNow organisation, and FAQPage. Every fact in the markup is also in the visible text, because answer engines ignore facts that exist only in JSON-LD.
+- **Vocabulary**: the About section opens with a third-person paragraph that uses the words people search for (LLM, generative AI, RAG, voice AI, MCP, fine-tuning, consultant, remote, startups) and names every `knowsAbout` term. The hero chips say "LLM agents".
+- **FAQ**: seven question-shaped answers under Terms, mirrored in FAQPage markup. These are the lines an AI engine lifts when someone asks "does he sign NDAs" or "where does the system run".
+- **`llms.txt`**: a short Markdown summary with quotable facts and links to each section. Low measured value, zero cost.
+- **Freshness**: an "Updated" date in the footer, in the structured data and in the sitemap, all set by one command (below).
+- **Speed**: fonts are self-hosted in `fonts/` (latin subset, 165 KB, preloaded), so there are no third-party requests and no visitor IP goes to Google; every image has width and height, so nothing shifts while the logos load.
+
+Still open: one URL for everything (a case-study page per project is the next SEO step), and the off-site signals that drive AI answers most: the same one-line description on LinkedIn, GitHub and the MentionNow team page, and something published.
+
+When the domain arrives:
+
+```bash
+python3 tools/site_meta.py --domain your-domain.com
+```
+
+After a content change:
+
+```bash
+python3 tools/site_meta.py --updated 2026-11-01
+```
+
+After launch: add the site to Google Search Console and Bing Webmaster Tools (most ChatGPT citations follow Bing's index) and submit `sitemap.xml` to both; paste the URL into the LinkedIn Post Inspector once so it fetches the share card; run MentionNow on your own name for a baseline.
+
 ## Before anything goes public
 
 - [ ] Employment: written consent from Bridgetown for outside consulting, or a leaving date (global plan, section 2)
 - [ ] Anya: written permission from Bridgetown to show it as a case study
 - [ ] Client logos and names: permission from Walker Sands / Balihans, and from Atlas and Bridgetown for their logos
 - [ ] MentionNow co-founders agree to the free AI Visibility Snapshot offer
-- [ ] Replace `YOUR-DOMAIN` in the structured data and the Open Graph tags in `<head>` (og:image must be an absolute URL or LinkedIn shows no picture)
+- [ ] Set the domain with `python3 tools/site_meta.py --domain …` (fills canonical, Open Graph, structured data, robots, sitemap and llms.txt; og:image must be an absolute URL or LinkedIn shows no picture)
 - [ ] After deploying, paste the URL into the LinkedIn Post Inspector (linkedin.com/post-inspector) once, so LinkedIn fetches the new preview card
 - [x] Booking: every "Book a call" button opens `calendly.com/dsrinivas360/30min` in a new tab, tagged `utm_source=portfolio` so Calendly shows which bookings came from the site
 - [ ] Connect the contact form (it only shows a message in this prototype)

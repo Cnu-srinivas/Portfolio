@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Srinivas Dharavath · Senior AI Engineer · AI systems that work after the demo</title>
-  <meta name="description" content="Senior AI engineer (IIT Madras) who designs, builds and runs AI systems end to end: agents, RAG, voice AI and document automation, with the guardrails, evals and cost tracking that keep them working after launch. Working with teams in India, the US, the UK, Europe and the Gulf.">
-  <!-- Link previews on LinkedIn, Slack, WhatsApp and X. Replace YOUR-DOMAIN before publishing; og:image must be an absolute URL. -->
+  <title>Srinivas Dharavath · Senior AI Engineer · Agents, RAG, Voice AI</title>
+  <meta name="description" content="Senior AI engineer (IIT Madras) in Hyderabad, India. I design, build and run production LLM systems: AI agents, RAG, voice AI and document automation, worldwide.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+  <!-- Link previews on LinkedIn, Slack, WhatsApp and X. The domain is set by tools/site_meta.py; og:image must be an absolute URL. -->
   <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Srinivas Dharavath">
   <meta property="og:title" content="Srinivas Dharavath · AI systems that work after the demo">
   <meta property="og:description" content="Senior AI engineer who designs, builds and runs AI end to end: ~70% less manual ticket work for a support team, an HR platform for 600 employees, an ATS 60 recruiters use daily.">
@@ -24,31 +27,180 @@
     /* the page is light (paper) by default; a visitor who chose the dark variant keeps it, applied before first paint */
     try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <!-- fonts are self-hosted (web/fonts): no third-party request, no visitor IP sent to Google -->
+  <link rel="preload" href="fonts/dm-sans-normal-400-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css?v=8">
-  <!-- Structured data for search and AI engines. Replace YOUR-DOMAIN before publishing. -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css?v=9">
+  <!-- Structured data for search and AI engines. Every fact here is also in the visible text. Run tools/site_meta.py to set the domain and the updated date. -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      { "@type": "ProfilePage", "dateModified": "2026-10-06", "mainEntity": { "@id": "https://YOUR-DOMAIN/#me" } },
-      { "@type": "Person", "@id": "https://YOUR-DOMAIN/#me",
-        "name": "Srinivas Dharavath",
-        "jobTitle": "Senior AI Engineer",
-        "description": "Senior AI engineer who designs, builds and runs AI systems end to end: agents, retrieval, voice AI and document automation, with the guardrails, evals and cost tracking that keep them working after launch. Works with teams in India, the US, the UK, Europe and the Gulf.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Madras" },
-        "knowsAbout": ["AI agents", "Retrieval-augmented generation", "Voice AI", "LLM evaluation", "Model Context Protocol", "LLM fine-tuning", "Recruitment automation"],
-        "image": "https://YOUR-DOMAIN/images/profile.jpg",
-        "sameAs": ["https://www.linkedin.com/in/srinivas77777",
-                    "https://github.com/Cnu-srinivas"],
-        "potentialAction": { "@type": "ScheduleAction", "name": "Book a 30-minute call", "target": "https://calendly.com/dsrinivas360/30min" } },
-      { "@type": "Organization", "name": "MentionNow", "url": "https://www.mentionnow.io", "founder": { "@id": "https://YOUR-DOMAIN/#me" } }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://YOUR-DOMAIN/#site",
+      "url": "https://YOUR-DOMAIN/",
+      "name": "Srinivas Dharavath",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://YOUR-DOMAIN/#me"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://YOUR-DOMAIN/#page",
+      "url": "https://YOUR-DOMAIN/",
+      "isPartOf": {
+        "@id": "https://YOUR-DOMAIN/#site"
+      },
+      "dateCreated": "2026-09-22",
+      "dateModified": "2026-10-06",
+      "mainEntity": {
+        "@id": "https://YOUR-DOMAIN/#me"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://YOUR-DOMAIN/#me",
+      "name": "Srinivas Dharavath",
+      "url": "https://YOUR-DOMAIN/",
+      "jobTitle": "Senior AI Engineer",
+      "description": "Srinivas Dharavath is a Senior AI Engineer and AI consultant in Hyderabad, India, specialising in production systems built on large language models (LLMs). He works remotely with startups, agencies and enterprises in India, the US, the UK, Europe and the Gulf.",
+      "email": "mailto:dsrinivas360@gmail.com",
+      "image": "https://YOUR-DOMAIN/images/profile.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressCountry": "IN"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Bridgetown Consulting Group"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Madras"
+      },
+      "knowsAbout": [
+        "Generative AI",
+        "Large language models (LLMs)",
+        "AI agents",
+        "Retrieval-augmented generation (RAG)",
+        "Voice AI",
+        "Document intelligence",
+        "LLM fine-tuning",
+        "LLM evaluation",
+        "Model Context Protocol (MCP)",
+        "Recruitment and HR automation",
+        "AWS",
+        "Azure"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/srinivas77777",
+        "https://github.com/Cnu-srinivas"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "AI Opportunity Sprint",
+          "description": "Two weeks, fixed scope: map one workflow and what it costs today, prototype the riskiest part, a cost per task, and a go/no-go with a build plan."
+        },
+        {
+          "@type": "Offer",
+          "name": "Production-Readiness Audit",
+          "description": "Two weeks, fixed scope, for AI that already exists: failure patterns from real conversations, an eval baseline, failover and guardrail review, ranked cost and latency fixes."
+        },
+        {
+          "@type": "Offer",
+          "name": "Agent Pilot",
+          "description": "Six weeks in two-week loops: one agent taken to a monitored pilot in your cloud, with evals, a cost dashboard and full handover."
+        },
+        {
+          "@type": "Offer",
+          "name": "Fractional AI Engineer",
+          "description": "Monthly, about a day a week: roadmap and architecture reviews, eval and cost monitoring, help hiring your AI team."
+        }
+      ],
+      "potentialAction": {
+        "@type": "ScheduleAction",
+        "name": "Book a 30-minute call",
+        "target": "https://calendly.com/dsrinivas360/30min"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "MentionNow",
+      "url": "https://www.mentionnow.io",
+      "founder": {
+        "@id": "https://YOUR-DOMAIN/#me"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://YOUR-DOMAIN/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work with companies outside India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I work remotely with teams in India, the US, the UK, Europe and the Gulf. Indian and Gulf teams share my whole working day, Europe most of the afternoon, and US calls fit my evening. Invoices go out in INR, USD, GBP, EUR or AED."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does the system run, and who owns the code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In your own AWS or Azure account and region. The code, documentation and dashboards are yours once paid, with a recorded walkthrough for your team, and my access is removed at the end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my data be used to train AI models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every model provider is listed up front and none of them trains on your data. Where it is needed I sign a DPA with SCCs for the EU, a UK IDTA or a HIPAA BAA, and an NDA before you share any details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does an engagement start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With a 30-minute call and a written proposal within two business days. Most teams then run a two-week, fixed-price Sprint or Audit, which ends in a prototype or a ranked list of fixes, a cost model and a clear go/no-go. Builds run in two-week loops with working software each time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which models and tools do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenAI, Claude and Gemini models through their APIs, and open models such as LLaMA and Qwen where fine-tuning or self-hosting makes sense. LangGraph, LangChain, CrewAI and the Model Context Protocol for agents; Python, FastAPI and PostgreSQL for the backend; AWS and Azure for the cloud. Each step gets the simplest thing that works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you fix an AI system that already exists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Production-Readiness Audit is for AI that is flaky, slow or expensive: I pull failure patterns from real conversations, set up an eval baseline with pass/fail checks, review failover and guardrails, and rank the cost and latency fixes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you available part-time or as a fractional AI engineer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. As a fractional AI engineer I give a founder about a day a week for roadmap and architecture reviews, eval and cost monitoring, and help hiring an AI team."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -130,7 +282,7 @@
       <p class="hero-kicker">Senior AI Engineer · IIT Madras · Hyderabad, India</p>
       <h1 id="hero-title">AI systems that work <span class="hl">after the demo.</span></h1>
       <p class="hero-sub">I design, build and run AI for teams that need it to hold up in daily use: <strong>the model and its guardrails, the backend, the cloud, and the dashboard that shows what it costs</strong>. One workflow at a time, from the first conversation to a system your team relies on, for companies in India, the US, the UK, Europe and the Gulf.</p>
-      <ul class="hero-chips" aria-label="What I build"><li>Agents</li><li>RAG</li><li>Voice AI</li><li>Document AI</li><li>Fine-tuning</li><li>AWS &amp; Azure</li></ul>
+      <ul class="hero-chips" aria-label="What I build"><li>LLM agents</li><li>RAG</li><li>Voice AI</li><li>Document AI</li><li>Fine-tuning</li><li>AWS &amp; Azure</li></ul>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://calendly.com/dsrinivas360/30min?utm_source=portfolio" target="_blank" rel="noopener noreferrer">Book a 30-min call</a>
         <a class="btn" href="#work">See the work</a>
@@ -152,32 +304,32 @@
     <p class="worked-label">Worked with</p>
     <div class="marquee" aria-label="Companies and clients I have worked with">
       <ul class="marquee-track">
-        <li><img src="logos/companies/bridgetown-consulting-group.png" alt="Bridgetown Consulting Group" loading="lazy" decoding="async"><span>Bridgetown Consulting Group</span></li>
-        <li><img src="logos/companies/atlas-systems.png" alt="Atlas Systems" loading="lazy" decoding="async"><span>Atlas Systems</span></li>
-        <li><img src="logos/companies/counsello-ai.jpg" alt="Bluekyte.AI (Counsello AI)" loading="lazy" decoding="async"><span>Bluekyte.AI (Counsello AI)</span></li>
-        <li><img src="logos/companies/open-data-fabric.png" alt="Open Data Fabric" loading="lazy" decoding="async"><span>Open Data Fabric</span></li>
-        <li><img src="logos/companies/walker-sands.svg" alt="Walker Sands" loading="lazy" decoding="async"><span>Walker Sands</span></li>
-        <li><img src="logos/companies/balihans-navy.jpg" alt="Balihans" loading="lazy" decoding="async"><span>Balihans</span></li>
-        <li><img src="logos/companies/shakty-ai.png" alt="ShaktyAI" loading="lazy" decoding="async"><span>ShaktyAI</span></li>
-        <li><img src="logos/companies/mentionnow.svg" alt="MentionNow" loading="lazy" decoding="async"><span>MentionNow</span></li>
-        <li><img src="logos/companies/masai-school.png" alt="Masai School" loading="lazy" decoding="async"><span>Masai School</span></li>
-        <li><img src="logos/companies/statinfer.png" alt="Statinfer" loading="lazy" decoding="async"><span>Statinfer</span></li>
-        <li><img src="logos/companies/medtoureasy.jpg" alt="MedTourEasy" loading="lazy" decoding="async"><span>MedTourEasy</span></li>
-        <li><img src="logos/companies/villageagro.jpg" alt="Villageagro" loading="lazy" decoding="async"><span>Villageagro</span></li>
-        <li><img src="logos/companies/mazagon-dock-shipbuilders.svg" alt="Mazagon Dock Shipbuilders" loading="lazy" decoding="async"><span>Mazagon Dock Shipbuilders</span></li>
-        <li aria-hidden="true"><img src="logos/companies/bridgetown-consulting-group.png" alt="Bridgetown Consulting Group" loading="lazy" decoding="async"><span>Bridgetown Consulting Group</span></li>
-        <li aria-hidden="true"><img src="logos/companies/atlas-systems.png" alt="Atlas Systems" loading="lazy" decoding="async"><span>Atlas Systems</span></li>
-        <li aria-hidden="true"><img src="logos/companies/counsello-ai.jpg" alt="Bluekyte.AI (Counsello AI)" loading="lazy" decoding="async"><span>Bluekyte.AI (Counsello AI)</span></li>
-        <li aria-hidden="true"><img src="logos/companies/open-data-fabric.png" alt="Open Data Fabric" loading="lazy" decoding="async"><span>Open Data Fabric</span></li>
-        <li aria-hidden="true"><img src="logos/companies/walker-sands.svg" alt="Walker Sands" loading="lazy" decoding="async"><span>Walker Sands</span></li>
-        <li aria-hidden="true"><img src="logos/companies/balihans-navy.jpg" alt="Balihans" loading="lazy" decoding="async"><span>Balihans</span></li>
-        <li aria-hidden="true"><img src="logos/companies/shakty-ai.png" alt="ShaktyAI" loading="lazy" decoding="async"><span>ShaktyAI</span></li>
-        <li aria-hidden="true"><img src="logos/companies/mentionnow.svg" alt="MentionNow" loading="lazy" decoding="async"><span>MentionNow</span></li>
-        <li aria-hidden="true"><img src="logos/companies/masai-school.png" alt="Masai School" loading="lazy" decoding="async"><span>Masai School</span></li>
-        <li aria-hidden="true"><img src="logos/companies/statinfer.png" alt="Statinfer" loading="lazy" decoding="async"><span>Statinfer</span></li>
-        <li aria-hidden="true"><img src="logos/companies/medtoureasy.jpg" alt="MedTourEasy" loading="lazy" decoding="async"><span>MedTourEasy</span></li>
-        <li aria-hidden="true"><img src="logos/companies/villageagro.jpg" alt="Villageagro" loading="lazy" decoding="async"><span>Villageagro</span></li>
-        <li aria-hidden="true"><img src="logos/companies/mazagon-dock-shipbuilders.svg" alt="Mazagon Dock Shipbuilders" loading="lazy" decoding="async"><span>Mazagon Dock Shipbuilders</span></li>
+        <li><img src="logos/companies/bridgetown-consulting-group.png" alt="Bridgetown Consulting Group" loading="lazy" decoding="async" width="48" height="12"><span>Bridgetown Consulting Group</span></li>
+        <li><img src="logos/companies/atlas-systems.png" alt="Atlas Systems" loading="lazy" decoding="async" width="48" height="21"><span>Atlas Systems</span></li>
+        <li><img src="logos/companies/counsello-ai.jpg" alt="Bluekyte.AI (Counsello AI)" loading="lazy" decoding="async" width="48" height="48"><span>Bluekyte.AI (Counsello AI)</span></li>
+        <li><img src="logos/companies/open-data-fabric.png" alt="Open Data Fabric" loading="lazy" decoding="async" width="36" height="48"><span>Open Data Fabric</span></li>
+        <li><img src="logos/companies/walker-sands.svg" alt="Walker Sands" loading="lazy" decoding="async" width="48" height="7"><span>Walker Sands</span></li>
+        <li><img src="logos/companies/balihans-navy.jpg" alt="Balihans" loading="lazy" decoding="async" width="48" height="48"><span>Balihans</span></li>
+        <li><img src="logos/companies/shakty-ai.png" alt="ShaktyAI" loading="lazy" decoding="async" width="48" height="48"><span>ShaktyAI</span></li>
+        <li><img src="logos/companies/mentionnow.svg" alt="MentionNow" loading="lazy" decoding="async" width="48" height="10"><span>MentionNow</span></li>
+        <li><img src="logos/companies/masai-school.png" alt="Masai School" loading="lazy" decoding="async" width="48" height="17"><span>Masai School</span></li>
+        <li><img src="logos/companies/statinfer.png" alt="Statinfer" loading="lazy" decoding="async" width="48" height="11"><span>Statinfer</span></li>
+        <li><img src="logos/companies/medtoureasy.jpg" alt="MedTourEasy" loading="lazy" decoding="async" width="48" height="48"><span>MedTourEasy</span></li>
+        <li><img src="logos/companies/villageagro.jpg" alt="Villageagro" loading="lazy" decoding="async" width="48" height="48"><span>Villageagro</span></li>
+        <li><img src="logos/companies/mazagon-dock-shipbuilders.svg" alt="Mazagon Dock Shipbuilders" loading="lazy" decoding="async" width="47" height="48"><span>Mazagon Dock Shipbuilders</span></li>
+        <li aria-hidden="true"><img src="logos/companies/bridgetown-consulting-group.png" alt="Bridgetown Consulting Group" loading="lazy" decoding="async" width="48" height="12"><span>Bridgetown Consulting Group</span></li>
+        <li aria-hidden="true"><img src="logos/companies/atlas-systems.png" alt="Atlas Systems" loading="lazy" decoding="async" width="48" height="21"><span>Atlas Systems</span></li>
+        <li aria-hidden="true"><img src="logos/companies/counsello-ai.jpg" alt="Bluekyte.AI (Counsello AI)" loading="lazy" decoding="async" width="48" height="48"><span>Bluekyte.AI (Counsello AI)</span></li>
+        <li aria-hidden="true"><img src="logos/companies/open-data-fabric.png" alt="Open Data Fabric" loading="lazy" decoding="async" width="36" height="48"><span>Open Data Fabric</span></li>
+        <li aria-hidden="true"><img src="logos/companies/walker-sands.svg" alt="Walker Sands" loading="lazy" decoding="async" width="48" height="7"><span>Walker Sands</span></li>
+        <li aria-hidden="true"><img src="logos/companies/balihans-navy.jpg" alt="Balihans" loading="lazy" decoding="async" width="48" height="48"><span>Balihans</span></li>
+        <li aria-hidden="true"><img src="logos/companies/shakty-ai.png" alt="ShaktyAI" loading="lazy" decoding="async" width="48" height="48"><span>ShaktyAI</span></li>
+        <li aria-hidden="true"><img src="logos/companies/mentionnow.svg" alt="MentionNow" loading="lazy" decoding="async" width="48" height="10"><span>MentionNow</span></li>
+        <li aria-hidden="true"><img src="logos/companies/masai-school.png" alt="Masai School" loading="lazy" decoding="async" width="48" height="17"><span>Masai School</span></li>
+        <li aria-hidden="true"><img src="logos/companies/statinfer.png" alt="Statinfer" loading="lazy" decoding="async" width="48" height="11"><span>Statinfer</span></li>
+        <li aria-hidden="true"><img src="logos/companies/medtoureasy.jpg" alt="MedTourEasy" loading="lazy" decoding="async" width="48" height="48"><span>MedTourEasy</span></li>
+        <li aria-hidden="true"><img src="logos/companies/villageagro.jpg" alt="Villageagro" loading="lazy" decoding="async" width="48" height="48"><span>Villageagro</span></li>
+        <li aria-hidden="true"><img src="logos/companies/mazagon-dock-shipbuilders.svg" alt="Mazagon Dock Shipbuilders" loading="lazy" decoding="async" width="47" height="48"><span>Mazagon Dock Shipbuilders</span></li>
       </ul>
     </div>
     <ul class="trustline" aria-label="How I work with clients">
@@ -558,8 +710,27 @@
   </div>
 </section>
 
+<!-- ================= FAQ ================= -->
+<section class="section section-band" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Questions clients ask</p>
+      <h2 id="faq-title">Straight answers before the first call</h2>
+    </div>
+    <dl class="faq">
+      <div><dt>Do you work with companies outside India?</dt><dd>Yes. I work remotely with teams in India, the US, the UK, Europe and the Gulf. Indian and Gulf teams share my whole working day, Europe most of the afternoon, and US calls fit my evening. Invoices go out in INR, USD, GBP, EUR or AED.</dd></div>
+      <div><dt>Where does the system run, and who owns the code?</dt><dd>In your own AWS or Azure account and region. The code, documentation and dashboards are yours once paid, with a recorded walkthrough for your team, and my access is removed at the end.</dd></div>
+      <div><dt>Will my data be used to train AI models?</dt><dd>No. Every model provider is listed up front and none of them trains on your data. Where it is needed I sign a DPA with SCCs for the EU, a UK IDTA or a HIPAA BAA, and an NDA before you share any details.</dd></div>
+      <div><dt>How does an engagement start?</dt><dd>With a 30-minute call and a written proposal within two business days. Most teams then run a two-week, fixed-price Sprint or Audit, which ends in a prototype or a ranked list of fixes, a cost model and a clear go/no-go. Builds run in two-week loops with working software each time.</dd></div>
+      <div><dt>Which models and tools do you work with?</dt><dd>OpenAI, Claude and Gemini models through their APIs, and open models such as LLaMA and Qwen where fine-tuning or self-hosting makes sense. LangGraph, LangChain, CrewAI and the Model Context Protocol for agents; Python, FastAPI and PostgreSQL for the backend; AWS and Azure for the cloud. Each step gets the simplest thing that works.</dd></div>
+      <div><dt>Can you fix an AI system that already exists?</dt><dd>Yes. The Production-Readiness Audit is for AI that is flaky, slow or expensive: I pull failure patterns from real conversations, set up an eval baseline with pass/fail checks, review failover and guardrails, and rank the cost and latency fixes.</dd></div>
+      <div><dt>Are you available part-time or as a fractional AI engineer?</dt><dd>Yes. As a fractional AI engineer I give a founder about a day a week for roadmap and architecture reviews, eval and cost monitoring, and help hiring an AI team.</dd></div>
+    </dl>
+  </div>
+</section>
+
 <!-- ================= WORKING HOURS ================= -->
-<section class="section section-band" id="hours" aria-labelledby="hours-title">
+<section class="section" id="hours" aria-labelledby="hours-title">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Working hours</p>
@@ -603,9 +774,10 @@
 <!-- ================= ABOUT ================= -->
 <section class="section section-band" id="about" aria-labelledby="about-title">
   <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">About</p>
+    <div class="section-head wide">
+      <p class="eyebrow">About · Srinivas Dharavath</p>
       <h2 id="about-title">From ship hulls to AI systems</h2>
+      <p class="bio-summary">Srinivas Dharavath is a Senior AI Engineer and AI consultant in Hyderabad, India, specialising in production systems built on large language models (LLMs). He works remotely with startups, agencies and enterprises in India, the US, the UK, Europe and the Gulf. He designs, builds and runs production generative AI systems: AI agents and multi-agent workflows with LangGraph, CrewAI and the Model Context Protocol (MCP); retrieval-augmented generation (RAG) over company documents; real-time voice AI on Twilio and the OpenAI Realtime API; document intelligence with OCR and Azure Document Intelligence; LLM fine-tuning (LLaMA 3 with LoRA) and LLM evaluation; and recruitment and HR automation, including an AI-enabled ATS and a multi-entity HRMS. His systems run on AWS and Azure with Python, FastAPI and PostgreSQL. He holds a B.Tech and M.Tech from IIT Madras, teaches AI/ML engineering at Masai School, and co-founded MentionNow, an AI visibility (GEO) platform. He takes fixed-scope consulting engagements and fractional AI engineering roles.</p>
     </div>
     <div class="about">
       <div class="about-text">
@@ -639,38 +811,38 @@
       <p class="eyebrow">Tools I ship with</p>
       <div class="stack-groups">
         <div class="stack-group"><h3>Agents & models</h3><ul>
-          <li><span class="tile"><img src="logos/tech/langgraph.svg" alt=""></span>LangGraph</li>
-          <li><span class="tile"><img src="logos/tech/langchain.svg" alt=""></span>LangChain</li>
-          <li><span class="tile"><img src="logos/tech/crewai.png" alt=""></span>CrewAI</li>
-          <li><span class="tile"><img src="logos/tech/model-context-protocol.svg" alt=""></span>MCP</li>
-          <li><span class="tile"><img src="logos/tech/openai.svg" alt=""></span>OpenAI</li>
-          <li><span class="tile"><img src="logos/tech/claude.svg" alt=""></span>Claude</li>
-          <li><span class="tile"><img src="logos/tech/google-gemini.svg" alt=""></span>Gemini</li>
-          <li><span class="tile"><img src="logos/tech/meta-llama.svg" alt=""></span>Llama</li>
-          <li><span class="tile"><img src="logos/tech/hugging-face.svg" alt=""></span>Hugging Face</li>
+          <li><span class="tile"><img src="logos/tech/langgraph.svg" alt="" width="48" height="48"></span>LangGraph</li>
+          <li><span class="tile"><img src="logos/tech/langchain.svg" alt="" width="48" height="48"></span>LangChain</li>
+          <li><span class="tile"><img src="logos/tech/crewai.png" alt="" width="48" height="15"></span>CrewAI</li>
+          <li><span class="tile"><img src="logos/tech/model-context-protocol.svg" alt="" width="48" height="48"></span>MCP</li>
+          <li><span class="tile"><img src="logos/tech/openai.svg" alt="" width="48" height="48"></span>OpenAI</li>
+          <li><span class="tile"><img src="logos/tech/claude.svg" alt="" width="48" height="48"></span>Claude</li>
+          <li><span class="tile"><img src="logos/tech/google-gemini.svg" alt="" width="48" height="48"></span>Gemini</li>
+          <li><span class="tile"><img src="logos/tech/meta-llama.svg" alt="" width="48" height="47"></span>Llama</li>
+          <li><span class="tile"><img src="logos/tech/hugging-face.svg" alt="" width="48" height="48"></span>Hugging Face</li>
         </ul></div>
         <div class="stack-group"><h3>Backend & data</h3><ul>
-          <li><span class="tile"><img src="logos/tech/python.svg" alt=""></span>Python</li>
-          <li><span class="tile"><img src="logos/tech/fastapi.svg" alt=""></span>FastAPI</li>
-          <li><span class="tile"><img src="logos/tech/django.svg" alt=""></span>Django</li>
-          <li><span class="tile"><img src="logos/tech/postgresql.svg" alt=""></span>PostgreSQL</li>
-          <li><span class="tile"><img src="logos/tech/mongodb.svg" alt=""></span>MongoDB</li>
-          <li><span class="tile"><img src="logos/tech/supabase.svg" alt=""></span>Supabase</li>
-          <li><span class="tile"><img src="logos/tech/chromadb.svg" alt=""></span>ChromaDB</li>
+          <li><span class="tile"><img src="logos/tech/python.svg" alt="" width="48" height="48"></span>Python</li>
+          <li><span class="tile"><img src="logos/tech/fastapi.svg" alt="" width="48" height="48"></span>FastAPI</li>
+          <li><span class="tile"><img src="logos/tech/django.svg" alt="" width="48" height="48"></span>Django</li>
+          <li><span class="tile"><img src="logos/tech/postgresql.svg" alt="" width="48" height="48"></span>PostgreSQL</li>
+          <li><span class="tile"><img src="logos/tech/mongodb.svg" alt="" width="48" height="48"></span>MongoDB</li>
+          <li><span class="tile"><img src="logos/tech/supabase.svg" alt="" width="48" height="48"></span>Supabase</li>
+          <li><span class="tile"><img src="logos/tech/chromadb.svg" alt="" width="48" height="48"></span>ChromaDB</li>
         </ul></div>
         <div class="stack-group"><h3>Cloud & ops</h3><ul>
-          <li><span class="tile"><img src="logos/aws/aws.svg" alt=""></span>AWS</li>
-          <li><span class="tile"><img src="logos/azure/azure.svg" alt=""></span>Azure</li>
-          <li><span class="tile"><img src="logos/tech/docker.svg" alt=""></span>Docker</li>
-          <li><span class="tile"><img src="logos/tech/kubernetes.svg" alt=""></span>Kubernetes</li>
-          <li><span class="tile"><img src="logos/tech/terraform.svg" alt=""></span>Terraform</li>
+          <li><span class="tile"><img src="logos/aws/aws.svg" alt="" width="48" height="29"></span>AWS</li>
+          <li><span class="tile"><img src="logos/azure/azure.svg" alt="" width="48" height="48"></span>Azure</li>
+          <li><span class="tile"><img src="logos/tech/docker.svg" alt="" width="48" height="48"></span>Docker</li>
+          <li><span class="tile"><img src="logos/tech/kubernetes.svg" alt="" width="48" height="48"></span>Kubernetes</li>
+          <li><span class="tile"><img src="logos/tech/terraform.svg" alt="" width="48" height="48"></span>Terraform</li>
         </ul></div>
         <div class="stack-group"><h3>Channels & product</h3><ul>
-          <li><span class="tile"><img src="logos/tech/twilio.svg" alt=""></span>Twilio</li>
-          <li><span class="tile"><img src="logos/tech/whatsapp.svg" alt=""></span>WhatsApp</li>
-          <li><span class="tile"><img src="logos/tech/stripe.svg" alt=""></span>Stripe</li>
-          <li><span class="tile"><img src="logos/tech/react.svg" alt=""></span>React</li>
-          <li><span class="tile"><img src="logos/tech/nextjs.svg" alt=""></span>Next.js</li>
+          <li><span class="tile"><img src="logos/tech/twilio.svg" alt="" width="48" height="48"></span>Twilio</li>
+          <li><span class="tile"><img src="logos/tech/whatsapp.svg" alt="" width="48" height="48"></span>WhatsApp</li>
+          <li><span class="tile"><img src="logos/tech/stripe.svg" alt="" width="48" height="20"></span>Stripe</li>
+          <li><span class="tile"><img src="logos/tech/react.svg" alt="" width="48" height="48"></span>React</li>
+          <li><span class="tile"><img src="logos/tech/nextjs.svg" alt="" width="48" height="48"></span>Next.js</li>
         </ul></div>
       </div>
     </div>
@@ -720,7 +892,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© 2026 Srinivas Dharavath · Hyderabad, India</p>
+    <p>© 2026 Srinivas Dharavath · Hyderabad, India · Updated <time datetime="2026-10-06">6 October 2026</time></p>
     <p>Invoices in INR, USD, GBP, EUR or AED · W-8BEN on request</p>
     <ul>
       <li><a href="https://www.linkedin.com/in/srinivas77777" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -731,6 +903,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=7"></script>
+<script src="js/main.js?v=8"></script>
 </body>
 </html>

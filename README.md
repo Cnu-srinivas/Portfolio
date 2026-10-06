@@ -12,6 +12,7 @@ Everything behind my portfolio website: the content, the research that shaped it
 | `docs/website.md` | How to run and edit the site, what still needs filling, pre-launch checklist | No |
 | `tools/sync_logos.py` | Copies the logos the page uses into `web/logos/` | No |
 | `tools/make_og_image.py` | Rebuilds `web/images/og.png`, the preview card shown when the site is shared on LinkedIn | No |
+| `tools/site_meta.py` | Sets the site's domain and "updated" date everywhere they appear (`--domain`, `--updated`) | No |
 
 ## Run the site locally
 

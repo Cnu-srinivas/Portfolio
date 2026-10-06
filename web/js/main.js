@@ -62,7 +62,7 @@
         setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.removeProperty('--d'); }, 900);
       });
     }, { threshold: 0, rootMargin: '0px 0px 20% 0px' });   // start just before a block enters, so a fast scroll never lands on a blank area
-    each('.section-head, .usecases, .case, .more li, .sim, .principles li, .offer, .snapshot, .steps li, .term, .tz, ' +
+    each('.section-head, .usecases, .case, .more li, .sim, .principles li, .offer, .snapshot, .steps li, .term, .faq > div, .tz, ' +
          '.about-text, .timeline li, .beyond, .stack-group, .contact-intro, form.brief', function (el) {
       if (el.getBoundingClientRect().top < window.innerHeight) return;
       var i = Array.prototype.indexOf.call(el.parentNode.children, el);
