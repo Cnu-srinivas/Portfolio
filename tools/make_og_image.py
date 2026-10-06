@@ -58,7 +58,7 @@ for i, (n, l) in enumerate(TEXT["proofs"]):
 
 # name, bottom right, with a small hull mark
 d.text((W - M, H - 48), TEXT["name"], font=font("Arial Bold.ttf", 22), fill=INK, anchor="rs")
-d.text((W - M, H - 22), "linkedin.com/in/srinivas77777", font=font("Arial.ttf", 16), fill="#656E61", anchor="rs")
+d.text((W - M, H - 22), "www.srinivasdharavath.com", font=font("Arial.ttf", 16), fill="#656E61", anchor="rs")
 
 out = os.path.join(os.path.dirname(__file__), "..", "web", "images", "og.png")
 img.save(out, optimize=True)

@@ -47,7 +47,7 @@ That copies the referenced logos into `web/logos/` and deletes any that the page
 
 Import the repo, then set **Root Directory: `web`**. Framework preset "Other", no build command, no output directory. Everything outside `web/` (your portfolio source, the plan documents, the logo library) is then never deployed and never reachable by URL.
 
-Deploy a branch first to get a preview URL, and keep it unlisted until the permission questions below are settled.
+Live at https://www.srinivasdharavath.com since 6 Oct 2026 (GoDaddy DNS: A `@` → Vercel, CNAME `www` → Vercel; the apex redirects to www). Production deploys from `main`; `dev` gets merged in through pull requests.
 
 ## Navigation
 
@@ -97,10 +97,10 @@ What is in place (6 Oct 2026):
 
 Still open: one URL for everything (a case-study page per project is the next SEO step), and the off-site signals that drive AI answers most: the same one-line description on LinkedIn, GitHub and the MentionNow team page, and something published.
 
-When the domain arrives:
+The domain is set to `www.srinivasdharavath.com`. If it ever changes:
 
 ```bash
-python3 tools/site_meta.py --domain your-domain.com
+python3 tools/site_meta.py --domain new-domain.com
 ```
 
 After a content change:
@@ -117,7 +117,7 @@ After launch: add the site to Google Search Console and Bing Webmaster Tools (mo
 - [ ] Anya: written permission from Bridgetown to show it as a case study
 - [ ] Client logos and names: permission from Walker Sands / Balihans, and from Atlas and Bridgetown for their logos
 - [ ] MentionNow co-founders agree to the free AI Visibility Snapshot offer
-- [ ] Set the domain with `python3 tools/site_meta.py --domain …` (fills canonical, Open Graph, structured data, robots, sitemap and llms.txt; og:image must be an absolute URL or LinkedIn shows no picture)
+- [x] Domain set to `www.srinivasdharavath.com` in canonical, Open Graph, structured data, robots, sitemap and llms.txt (6 Oct 2026)
 - [ ] After deploying, paste the URL into the LinkedIn Post Inspector (linkedin.com/post-inspector) once, so LinkedIn fetches the new preview card
 - [x] Booking: every "Book a call" button opens `calendly.com/dsrinivas360/30min` in a new tab, tagged `utm_source=portfolio` so Calendly shows which bookings came from the site
 - [ ] Connect the contact form (it only shows a message in this prototype)
