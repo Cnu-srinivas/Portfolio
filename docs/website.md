@@ -12,7 +12,9 @@ A plain HTML + CSS prototype of the client-facing portfolio homepage, so you can
   # then open http://localhost:8000/
   ```
 
-The sun button in the header switches between the dark ("deep water") and light ("drafting film") themes. The page remembers your choice.
+The sun button in the header switches between the dark ("deep water") and light ("drafting paper") themes. The page remembers your choice.
+
+Colours: ink on drafting paper, signal orange for actions and traced paths, sea blue for water and side paths, green for live and assured (tokens at the top of `css/styles.css`). Motion follows the visitor's "reduce motion" setting: with it on, nothing animates and nothing is hidden.
 
 ## Files
 
@@ -20,7 +22,8 @@ The sun button in the header switches between the dark ("deep water") and light 
 web/                 ← everything here, and only this, is deployed
   index.html         all homepage content, section by section (search for "=====")
   css/styles.css     the design system: colour tokens at the top, then one block per section
-  js/main.js         theme toggle, mobile menu, prototype form message
+  js/main.js         theme toggle, mobile menu, animations (scroll reveal, architecture trace,
+                     hero waterline, count-ups), prototype form message
   images/profile.jpg your photo
   logos/             copies of the logos the page uses
   robots.txt         search engines and AI answer engines welcomed explicitly

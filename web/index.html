@@ -7,7 +7,7 @@
   <meta name="description" content="Senior AI engineer (IIT Madras) who takes one workflow from the first conversation to daily use: the model, the database, the backend, the deployment and the monitoring. For teams in India, the US, the UK, Europe and the Gulf.">
   <meta property="og:title" content="Srinivas Dharavath · I build the AI, and the product around it">
   <meta property="og:description" content="An HR platform for 600 employees, an ATS 60 recruiters work in daily, and support automation that removed about 70% of manual ticket work.">
-  <meta name="theme-color" content="#0B1620">
+  <meta name="theme-color" content="#0A1520">
   <script>
     /* apply a saved theme before first paint, so there's no flash */
     try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=4">
   <!-- Structured data for search and AI engines. Replace YOUR-DOMAIN before publishing. -->
   <script type="application/ld+json">
   {
@@ -44,7 +44,7 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Srinivas Dharavath, home">
-      <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><path d="M3 21 H23 M13 4 V22 M13 21 C19 21 21 16 21 5 M13 21 C7 21 5 16 5 5"/></svg>
+      <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><path pathLength="1" d="M3 21 H23 M13 4 V22 M13 21 C19 21 21 16 21 5 M13 21 C7 21 5 16 5 5"/></svg>
       SRINIVAS DHARAVATH
     </a>
     <nav class="nav" aria-label="Main">
@@ -69,6 +69,7 @@
       </nav>
     </details>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
 <main id="main">
@@ -84,6 +85,17 @@
         <path class="wl" d="M40 280 H560"/>
         <path class="cl" d="M300 20 V312"/>
         <path class="base" d="M40 300 H560"/>
+        <defs><clipPath id="bp-clip"><rect x="40" y="0" width="520" height="300"/></clipPath></defs>
+        <g clip-path="url(#bp-clip)">
+          <g class="water-level">
+            <g class="water-bob">
+              <rect class="water-body" x="40" y="0" width="520" height="300"/>
+              <path class="wave" d="M40 0q10 -2.5 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/>
+            </g>
+            <text class="dwl-label" x="552" y="-9" text-anchor="end">DWL · LOAD 55% · STABLE</text>
+          </g>
+        </g>
+        <text class="bp-hint" x="560" y="14" text-anchor="end">↕ MOVE TO CHANGE THE LOAD</text>
         <path class="main" pathLength="1" style="--i:0" d="M300 300 C516.2 300, 535 210.0, 535 170 S544.4 74, 549.1 44"/>
         <path class="sta" pathLength="1" style="--i:1" d="M300 300 C473.6 300, 522 220.5, 522 170 S530.9 74, 535.3 44"/>
         <path class="sta" pathLength="1" style="--i:2" d="M300 300 C419.0 300, 496 233.8, 496 170 S503.8 74, 507.8 44"/>
@@ -98,7 +110,7 @@
     </svg>
     <div class="hero-text">
       <p class="hero-kicker">Srinivas Dharavath · Senior AI Engineer · IIT Madras · Hyderabad</p>
-      <h1 id="hero-title">I build the AI, and the product around it.</h1>
+      <h1 id="hero-title">I build the AI, <span class="hl">and the product around it.</span></h1>
       <p class="hero-sub">One workflow, taken from the first conversation to something your team uses every day: the <strong>model, the database, the backend, the deployment and the monitoring</strong>. For teams in India, the US, the UK, Europe and the Gulf.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#contact">Book a 30-min call</a>
@@ -106,9 +118,9 @@
       </div>
     </div>
     <div class="proof">
-      <div><span class="n">~70%</span><span class="l">less manual ticket work for a B2B support team</span></div>
-      <div><span class="n">600</span><span class="l">employees on an HR platform I designed and built</span></div>
-      <div><span class="n">800+</span><span class="l">students taught AI/ML at Masai School</span></div>
+      <div><span class="n" data-count="70" data-pre="~" data-suf="%">~70%</span><span class="l">less manual ticket work for a B2B support team</span></div>
+      <div><span class="n" data-count="600">600</span><span class="l">employees on an HR platform I designed and built</span></div>
+      <div><span class="n" data-count="800" data-suf="+">800+</span><span class="l">students taught AI/ML at Masai School</span></div>
     </div>
     <div class="titleblock" aria-hidden="true"><span>DWG</span><span>HOME · SHEET 01</span><span>SCALE</span><span>1 : 1</span><span>REV</span><span>2026.09</span></div>
   </div>
@@ -166,14 +178,14 @@
       <p>Each one solves a problem most industries share. Tell me which one sounds like your team's week.</p>
     </div>
     <div class="usecases">
-      <article class="usecase"><h3>Email & ticket automation</h3><p class="proofline">Agents that read incoming messages, file them, catch duplicates and draft replies. ~70% less manual work in production.</p><p class="fits"><b>Fits:</b> support, IT services, logistics, insurance, SaaS</p></article>
-      <article class="usecase"><h3>Document intelligence</h3><p class="proofline">Pull structured data out of PDFs, spreadsheets, scans and handwriting, across 10+ file formats.</p><p class="fits"><b>Fits:</b> finance, insurance, legal, healthcare admin, real estate</p></article>
-      <article class="usecase"><h3>Knowledge assistants</h3><p class="proofline">Chat with your company's documents, organized by department, with answers grounded in the source files.</p><p class="fits"><b>Fits:</b> agencies, consulting, legal, any document-heavy team</p></article>
-      <article class="usecase"><h3>Voice agents</h3><p class="proofline">Outbound and inbound calls that hold a natural conversation, cope with interruptions and log every answer.</p><p class="fits"><b>Fits:</b> healthcare, research, real estate, hospitality, collections</p></article>
-      <article class="usecase"><h3>AI products with guardrails</h3><p class="proofline">Customer-facing assistants with strict output contracts, guardrails that escalate instead of guessing, fallbacks when models fail, and cost tracking per conversation.</p><p class="fits"><b>Fits:</b> healthtech, wellness, edtech, fintech apps</p></article>
-      <article class="usecase"><h3>Risk & compliance review</h3><p class="proofline">Agent teams that run multi-stage reviews, with a checking agent that validates each stage before the next.</p><p class="fits"><b>Fits:</b> fintech, banks, SaaS vendors, procurement</p></article>
-      <article class="usecase"><h3>Recruitment &amp; HR automation</h3><p class="proofline">An ATS that runs from client and vendor onboarding through AI résumé screening to hiring, used by 60 people, and an HRMS for 600 employees with per-unit access control and AI attendance reports.</p><p class="fits"><b>Fits:</b> staffing and recruitment firms, HR teams, multi-entity groups</p></article>
-      <article class="usecase"><h3>AI visibility</h3><p class="proofline">Measure and improve how ChatGPT, Claude and Perplexity describe your brand, with MentionNow, which I co-founded.</p><p class="fits"><b>Fits:</b> any brand, in any market</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><rect x="5" y="9" width="28" height="20" rx="1"/><path d="M5 11l14 10 14-10"/><path class="ac" pathLength="1" d="M25 25l3 3 6-7"/></svg><h3>Email & ticket automation</h3><p class="proofline">Agents that read incoming messages, file them, catch duplicates and draft replies. ~70% less manual work in production.</p><p class="fits"><b>Fits:</b> support, IT services, logistics, insurance, SaaS</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><path d="M10 5h13l7 7v21H10z"/><path d="M23 5v7h7"/><path class="ac" pathLength="1" d="M14 19h12M14 24h12M14 29h7"/></svg><h3>Document intelligence</h3><p class="proofline">Pull structured data out of PDFs, spreadsheets, scans and handwriting, across 10+ file formats.</p><p class="fits"><b>Fits:</b> finance, insurance, legal, healthcare admin, real estate</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><path d="M6 8h11a3 3 0 013 3v21a3 3 0 00-3-3H6zM34 8H23a3 3 0 00-3 3v21a3 3 0 013-3h11z"/><path class="ac" pathLength="1" d="M10 14h5M25 14h5"/></svg><h3>Knowledge assistants</h3><p class="proofline">Chat with your company's documents, organized by department, with answers grounded in the source files.</p><p class="fits"><b>Fits:</b> agencies, consulting, legal, any document-heavy team</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><rect x="15" y="5" width="8" height="16" rx="4"/><path d="M10 17a9 9 0 0018 0M19 26v6M14 32h10"/><path class="ac" pathLength="1" d="M31 10c2 2 2 6 0 8M34 7c4 4 4 10 0 14"/></svg><h3>Voice agents</h3><p class="proofline">Outbound and inbound calls that hold a natural conversation, cope with interruptions and log every answer.</p><p class="fits"><b>Fits:</b> healthcare, research, real estate, hospitality, collections</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><path d="M19 5l12 5v8c0 8-5 13-12 16-7-3-12-8-12-16v-8z"/><path class="ac" pathLength="1" d="M14 19l4 4 7-8"/></svg><h3>AI products with guardrails</h3><p class="proofline">Customer-facing assistants with strict output contracts, guardrails that escalate instead of guessing, fallbacks when models fail, and cost tracking per conversation.</p><p class="fits"><b>Fits:</b> healthtech, wellness, edtech, fintech apps</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><circle cx="11" cy="12" r="4"/><circle cx="27" cy="12" r="4"/><circle cx="19" cy="27" r="4"/><path class="ac" pathLength="1" d="M14 14l3 9M24 14l-3 9M15 12h8"/></svg><h3>Risk & compliance review</h3><p class="proofline">Agent teams that run multi-stage reviews, with a checking agent that validates each stage before the next.</p><p class="fits"><b>Fits:</b> fintech, banks, SaaS vendors, procurement</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><circle cx="14" cy="12" r="5"/><path d="M5 31c1-6 5-9 9-9s8 3 9 9"/><path class="ac" pathLength="1" d="M25 14h9M25 19h9M25 24h6"/></svg><h3>Recruitment &amp; HR automation</h3><p class="proofline">An ATS that runs from client and vendor onboarding through AI résumé screening to hiring, used by 60 people, and an HRMS for 600 employees with per-unit access control and AI attendance reports.</p><p class="fits"><b>Fits:</b> staffing and recruitment firms, HR teams, multi-entity groups</p></article>
+      <article class="usecase"><svg class="ico" viewBox="0 0 38 38" aria-hidden="true"><circle cx="17" cy="17" r="9"/><path d="M24 24l8 8"/><path class="ac" pathLength="1" d="M12 19l3-4 3 3 4-5"/></svg><h3>AI visibility</h3><p class="proofline">Measure and improve how ChatGPT, Claude and Perplexity describe your brand, with MentionNow, which I co-founded.</p><p class="fits"><b>Fits:</b> any brand, in any market</p></article>
     </div>
   </div>
 </section>
@@ -478,7 +490,7 @@
       <div class="tz-row" role="row"><div role="rowheader"><b>US West</b><small>San Francisco</small></div><div class="tz-track" role="cell"><i style="left:89.58%;width:10.42%"></i><i style="left:0;width:22.92%"></i></div><div class="tz-num" role="cell">21:30–05:30 IST</div></div>
       <div class="tz-row" role="row"><div role="rowheader"><b>Singapore</b><small>UTC+8</small></div><div class="tz-track" role="cell"><i style="left:27.08%;width:33.33%"></i></div><div class="tz-num" role="cell">06:30–14:30 IST</div></div>
       <div class="tz-axis" aria-hidden="true"><span></span><div><span style="left:0%">00</span><span style="left:25%">06</span><span style="left:50%">12</span><span style="left:75%">18</span><span style="left:100%">24</span></div><span></span></div>
-      <p class="tz-note"><span><i style="background:var(--accent)"></i>Your 9:00–17:00, in IST</span><span><i style="background:var(--accent-soft); outline:1px solid var(--line-2)"></i>My core hours</span><span>Times as of late September; clocks change in Oct–Nov.</span></p>
+      <p class="tz-note"><span><i style="background:var(--accent)"></i>Your 9:00–17:00, in IST</span><span><i style="background:var(--sea-soft); outline:1px solid var(--line-2)"></i>My core hours</span><span class="now-key"><i></i>Now in Hyderabad: <b data-now></b></span><span>Times as of late September; clocks change in Oct–Nov.</span></p>
     </div>
   </div>
 </section>
@@ -632,6 +644,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>
