@@ -111,6 +111,14 @@ python3 tools/site_meta.py --updated 2026-11-01
 
 After launch: add the site to Google Search Console and Bing Webmaster Tools (most ChatGPT citations follow Bing's index) and submit `sitemap.xml` to both; paste the URL into the LinkedIn Post Inspector once so it fetches the share card; run MentionNow on your own name for a baseline.
 
+## Traffic
+
+**Vercel Web Analytics** (free on Hobby: 50,000 page views a month, one-month reporting window). The page already carries the snippet, guarded so it only loads on `srinivasdharavath.com` and `*.vercel.app`. To switch it on: Vercel dashboard → project **portfolio** → **Analytics** in the sidebar → **Enable**. From the next deploy, the same tab shows visitors, page views, referrers (linkedin.com, google.com, direct), countries, devices and browsers. Cookie-free and anonymised, so no consent banner and nothing that contradicts the Terms section. The UTM breakdown is a Pro add-on; on Hobby, read the LinkedIn traffic from the referrer row instead.
+
+Rough numbers before enabling it, or for history: Vercel → **Usage** → Edge Requests counts every request to the project since launch (each visit is several requests, so divide by roughly ten).
+
+What the other tools tell you: **Google Search Console** shows search impressions and clicks, **Bing Webmaster Tools** adds Copilot and Bing, **LinkedIn post analytics** show impressions and link clicks per post, and **Calendly** shows bookings with the `utm_source` each link carries (portfolio vs linkedin).
+
 ## Before anything goes public
 
 - [ ] Employment: written consent from Bridgetown for outside consulting, or a leaving date (global plan, section 2)
