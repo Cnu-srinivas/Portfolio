@@ -55,7 +55,7 @@ Services (`#services`, the eight systems) · Work (`#work`) · How I build (`#pr
 
 ## Homepage sections, in order
 
-Hero → Worked with → What I can build for you (with an industry filter: chips above the grid dim the systems that don't fit and count the ones that do; each card's `data-fits` attribute lists its industries, so adding one is a one-word edit) → Selected work (5 case studies + more) → How I build (an agent simulator: four scenarios run a PTBuddy-style assistant through its request path, with telemetry, a run log and the six rules that light up; the scenario data sits at the top of the simulator block in `js/main.js`) → Ways to work together (what every build ships with, then the offers) → How I work → Questions clients ask (FAQ) → Working hours → About (+ photo, timeline, tools) → Contact
+Hero → Worked with → What I have built (with an industry filter: chips above the grid dim the systems that don't fit and count the ones that do; each card's `data-fits` attribute lists its industries, so adding one is a one-word edit) → Selected work (5 case studies + more) → How I build (an agent simulator: four scenarios run a PTBuddy-style assistant through its request path, with telemetry, a run log and the six rules that light up; the scenario data sits at the top of the simulator block in `js/main.js`) → Ways to work together (what every build ships with, then the offers) → How I work → Questions clients ask (FAQ) → Working hours → About (+ photo, timeline, tools) → Contact
 
 Below the five cases, "Also built" lists the other systems one per row (sector, name, one line), so it takes any number of entries; add a `<li>` with a `<small>`, a `<b>` and a `<span>`.
 

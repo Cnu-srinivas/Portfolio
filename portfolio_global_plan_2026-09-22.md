@@ -269,7 +269,7 @@ In consultant surveys, more than half get 60% of their business from referrals, 
 |---|---|---|
 | Navigation | Work · How I build · Writing · Now | Work · Services · How I work · Writing · **Book a call** |
 | Hero | "I make LLM systems behave in production." | "I make AI systems behave in production." + buyer sub-line; primary button "Book a 30-min call" |
-| New homepage blocks | n/a | What I can build for you (use-case grid) · Ways to work together (the offer ladder) · How engagements run (3 steps) · Working-hours strip · Trust strip ("NDA-first · your cloud · IP is yours · USD/GBP/EUR/AED") |
+| New homepage blocks | n/a | What I have built (use-case grid) · Ways to work together (the offer ladder) · How engagements run (3 steps) · Working-hours strip · Trust strip ("NDA-first · your cloud · IP is yours · USD/GBP/EUR/AED") |
 | New pages | /work, /now, /writing | + /services/[offer] · /how-i-work · /partners · /book · /use-cases/[x] (only with a real case) |
 | Case studies | Engineering story | + business layer on top; filter by industry and use case |
 | Contact | "Open to: Senior AI roles" | Remove job-seeking lines from the site. Use a form with at most 5 fields plus instant booking (Cal.com detects the visitor's time zone). Booking on the spot turns 66.7% of form fills into meetings, vs ~30% without it. |
