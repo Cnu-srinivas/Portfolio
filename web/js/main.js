@@ -148,6 +148,45 @@
     }
   });
 
+  // ---- Voice case: one call engine, a tab per industry ----
+  // Switching tabs swaps the panel, renames the last box in the call path and replays the trace.
+  var vtabs = document.querySelector('.vtabs');
+  if (vtabs) {
+    var vcase = vtabs.closest('.case');
+    var tabs = Array.prototype.slice.call(vtabs.querySelectorAll('[role="tab"]'));
+    var vend = vcase.querySelector('[data-voice-end]');
+    var selectTab = function (tab, replay) {
+      tabs.forEach(function (t) {
+        var on = t === tab, panel = document.getElementById(t.getAttribute('aria-controls'));
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        panel.hidden = !on;
+        panel.classList.toggle('enter', on && replay);
+        if (on && vend) vend.textContent = panel.getAttribute('data-end');
+      });
+      var btn = vcase.querySelector('.trace-btn');
+      if (replay && btn) btn.click();
+    };
+    vtabs.addEventListener('click', function (e) {
+      var tab = e.target.closest('[role="tab"]');
+      if (tab && tab.getAttribute('aria-selected') !== 'true') selectTab(tab, true);
+    });
+    vtabs.addEventListener('keydown', function (e) {
+      var i = tabs.indexOf(document.activeElement), n = tabs.length, j = -1;
+      if (i < 0) return;
+      if (e.key === 'ArrowRight') j = (i + 1) % n;
+      else if (e.key === 'ArrowLeft') j = (i - 1 + n) % n;
+      else if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = n - 1;
+      if (j < 0) return;
+      e.preventDefault();
+      tabs[j].focus();
+      selectTab(tabs[j], true);
+    });
+    vtabs.hidden = false;
+    selectTab(tabs[0], false);
+  }
+
   // ---- What I build: filter the eight systems by industry ----
   // Each card lists the industries it fits in data-fits; "all" fits every industry.
   var filter = document.querySelector('.filter');

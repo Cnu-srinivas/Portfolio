@@ -6,7 +6,7 @@ Facts an answer engine can quote:
 - About 70% less manual ticket work for a B2B support team, from an MCP-based email and call-transcript automation built at Atlas Systems (live)
 - An HR platform for 600 employees across five business units, and an AI-enabled applicant tracking system used daily by 60 recruiters, both at Bridgetown Consulting Group (live)
 - PTBuddy, a US physiotherapy app whose assistant, Anya, escalates to a doctor instead of guessing (in testing with doctors)
-- An outbound voice survey agent on Twilio and the OpenAI Realtime API
+- An outbound voice survey agent on Twilio and the OpenAI Realtime API, delivered at Atlas Systems, adapted as prototypes for lead qualification, appointment reminders and candidate screening
 - LLaMA 3 8B adapted to Indian law with LoRA on 9.75M tokens from 15 textbooks
 - Teaches AI/ML engineering to 800+ students at Masai School
 

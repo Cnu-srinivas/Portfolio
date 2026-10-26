@@ -437,6 +437,24 @@ a.btn:not(.btn-small):hover::after { transform: translateX(3px); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; }
 .tags li { font: 500 11.5px/1 var(--mono); padding: 6px 9px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--ink-2); background: var(--surface-2); transition: border-color .2s, color .2s; }
 .tags li:hover { border-color: var(--accent); color: var(--accent-text); }
+/* voice case: one engine, an industry tab per use case (tabs shown by main.js; without it the panels stack) */
+.vtabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.vtabs [role="tab"] {
+  min-height: 34px; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line-2);
+  background: var(--surface); color: var(--ink-2); font: 500 13px/1 var(--body); cursor: pointer;
+  transition: background-color .2s, border-color .2s, color .2s;
+}
+.vtabs [role="tab"]:hover { border-color: var(--ink); color: var(--ink); background: var(--sand-soft); }
+.vtabs [role="tab"][aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.vpanel { display: grid; gap: 16px; align-content: start; }
+.vpanel[hidden] { display: none; }
+.vpanel + .vpanel { padding-top: 16px; border-top: 1px dashed var(--line-2); }
+.vtabs:not([hidden]) ~ .vpanel { padding-top: 0; border-top: 0; }
+.vpanel > p:not(.dwg):not(.verify) { color: var(--ink-2); font-size: 15.5px; }
+@media (prefers-reduced-motion: no-preference) {
+  .vpanel.enter { animation: vpanel-in .35s var(--ease); }
+  @keyframes vpanel-in { from { opacity: 0; transform: translateY(6px); } }
+}
 .case-foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; align-items: center; font: 500 12.5px/1.4 var(--body); color: var(--ink-3); padding-top: 14px; border-top: 1px dashed var(--line-2); }
 
 /* architecture drawing panel */
