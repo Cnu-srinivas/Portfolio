@@ -62,7 +62,7 @@
         setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.removeProperty('--d'); }, 900);
       });
     }, { threshold: 0, rootMargin: '0px 0px 20% 0px' });   // start just before a block enters, so a fast scroll never lands on a blank area
-    each('.section-head, .usecases, .case, .more li, .sim, .principles li, .offer, .snapshot, .steps li, .term, .faq > div, .tz, ' +
+    each('.section-head, .usecases, .case, .variants, .more li, .sim, .principles li, .offer, .snapshot, .steps li, .term, .faq > div, .tz, ' +
          '.profile-card, .about-text, .timeline li, .beyond, .stack-group, .contact-intro, form.brief', function (el) {
       if (el.getBoundingClientRect().top < window.innerHeight) return;
       var i = Array.prototype.indexOf.call(el.parentNode.children, el);
@@ -147,45 +147,6 @@
       watcher.observe(panel);
     }
   });
-
-  // ---- Voice case: one call engine, a tab per industry ----
-  // Switching tabs swaps the panel, renames the last box in the call path and replays the trace.
-  var vtabs = document.querySelector('.vtabs');
-  if (vtabs) {
-    var vcase = vtabs.closest('.case');
-    var tabs = Array.prototype.slice.call(vtabs.querySelectorAll('[role="tab"]'));
-    var vend = vcase.querySelector('[data-voice-end]');
-    var selectTab = function (tab, replay) {
-      tabs.forEach(function (t) {
-        var on = t === tab, panel = document.getElementById(t.getAttribute('aria-controls'));
-        t.setAttribute('aria-selected', String(on));
-        t.tabIndex = on ? 0 : -1;
-        panel.hidden = !on;
-        panel.classList.toggle('enter', on && replay);
-        if (on && vend) vend.textContent = panel.getAttribute('data-end');
-      });
-      var btn = vcase.querySelector('.trace-btn');
-      if (replay && btn) btn.click();
-    };
-    vtabs.addEventListener('click', function (e) {
-      var tab = e.target.closest('[role="tab"]');
-      if (tab && tab.getAttribute('aria-selected') !== 'true') selectTab(tab, true);
-    });
-    vtabs.addEventListener('keydown', function (e) {
-      var i = tabs.indexOf(document.activeElement), n = tabs.length, j = -1;
-      if (i < 0) return;
-      if (e.key === 'ArrowRight') j = (i + 1) % n;
-      else if (e.key === 'ArrowLeft') j = (i - 1 + n) % n;
-      else if (e.key === 'Home') j = 0;
-      else if (e.key === 'End') j = n - 1;
-      if (j < 0) return;
-      e.preventDefault();
-      tabs[j].focus();
-      selectTab(tabs[j], true);
-    });
-    vtabs.hidden = false;
-    selectTab(tabs[0], false);
-  }
 
   // ---- What I build: filter the eight systems by industry ----
   // Each card lists the industries it fits in data-fits; "all" fits every industry.
