@@ -739,11 +739,11 @@ Deployed as microservices using **Azure Container Apps**, designed to support th
 
 ---
 
-# 08 — REAL-TIME AI VOICE SURVEY
+# 08 — REAL-TIME VOICE AI, BY INDUSTRY
 
-## Project 04 — Automated Voice Survey using Twilio + OpenAI
+## Project 04 — Real-Time Voice Agents using Twilio + OpenAI
 
-Built a real-time automated outbound voice survey system.
+Built a real-time automated outbound voice survey system, then adapted the same call engine to three more industries as prototypes. The architecture and capabilities below are shared; each industry changes the prompts, the answer checks and the hand-off at the end of the call.
 
 ### Architecture
 
@@ -791,6 +791,39 @@ Built a real-time automated outbound voice survey system.
 - Language optimization
 
 The system was engineered for natural, responsive real-time conversations rather than static IVR interactions.
+
+### 08.1 — CRM: Customer Feedback Calls · Delivered (Atlas Systems)
+
+- Built an outbound voice survey agent on Twilio and the OpenAI Realtime API, streaming call audio over WebSockets for natural, low-latency conversations instead of IVR menus.
+- Designed prompt-driven survey flows that adapt questions to earlier answers, so new surveys need no code changes.
+- Added real-time answer validation that re-asks or clarifies incomplete or off-topic answers, keeping feedback data clean.
+- Captured transcripts and structured answers for every call as a survey record for sales and support teams.
+- Handled call status (answered, busy, no-answer, failed) through Twilio callbacks, with fallback URLs so dropped or failed calls are logged rather than lost.
+- Replaced manual feedback calling with an automated pipeline. [calls completed · completion rate · agent-hours saved]
+
+### 08.2 — Lead Generation: Lead Qualification Calls · Prototype
+
+- Adapted the voice engine to call new leads and ask qualifying questions (need, budget, timeline, decision-maker) in a natural back-and-forth.
+- Dynamic questioning skips irrelevant questions and digs deeper on promising answers.
+- Tuned turn detection and interruption handling so prospects can cut in, ask questions or change topic without breaking the call.
+- Validates and structures answers into a qualification record, then hands qualified leads to sales with a short call summary.
+- Caller ID and call-status handling log every attempt and outcome in an outbound campaign.
+
+### 08.3 — Healthcare & Services: Appointment Reminders and Follow-ups · Prototype
+
+- Adapted the voice engine for outbound appointment reminders, confirmations and post-visit check-ins.
+- Conversational flows let callers confirm, cancel or ask to reschedule in their own words instead of pressing keys.
+- Call-status tracking and fallback URLs flag missed or failed calls for retry or human follow-up.
+- Voice, audio and speech settings tuned for clear, calm speech suited to patients and older callers.
+- Each outcome (confirm, cancel, reschedule) is validated and logged as structured data for front-desk teams.
+
+### 08.4 — Recruitment & HR: First-Round Candidate Screening · Prototype
+
+- Adapted the voice engine for screening calls that ask role-specific questions generated from the job requirements.
+- Validates each answer live, with follow-up questions when a reply is vague or misses the question.
+- Transcribes the call and turns candidate answers into a structured screening scorecard for recruiters.
+- Transcription and language settings tuned for accents and multilingual candidates.
+- Interruption and turn-taking handling lets candidates ask about the role mid-call.
 
 ---
 
@@ -1456,7 +1489,10 @@ Early engineering experience in ship design.
 # 22 — INDUSTRIES I HAVE WORKED ACROSS
 
 ## Healthcare
-A physiotherapy product for the US market (PTBuddy): personalized exercise programs, an in-app AI assistant with clinical guardrails, and production healthcare workflows.
+A physiotherapy product for the US market (PTBuddy): personalized exercise programs, an in-app AI assistant with clinical guardrails, and production healthcare workflows. A voice-agent prototype for appointment reminders, confirmations and post-visit check-ins.
+
+## Sales & CRM
+An outbound voice agent for customer feedback surveys (delivered) and a voice-agent prototype that qualifies new leads and hands them to sales.
 
 ## TPRM
 Third-party risk management, risk assessment, control mapping, compliance validation, and vendor response analysis.
@@ -1471,7 +1507,7 @@ Technology and automation work supporting financial/business workflows.
 Technology and customer-engagement solutions supporting FMCG-oriented business workflows.
 
 ## Recruitment Consulting & HR Tech
-Products for a US recruitment consulting firm and its four India business units: an AI-enabled applicant tracking system used by 60 people to track 200 candidates across the recruitment lifecycle, and a custom HRMS used by 600 employees, with per-business-unit access control, AI-assisted leave applications and AI attendance reports.
+Products for a US recruitment consulting firm and its four India business units: an AI-enabled applicant tracking system used by 60 people to track 200 candidates across the recruitment lifecycle, and a custom HRMS used by 600 employees, with per-business-unit access control, AI-assisted leave applications and AI attendance reports. Separately, a voice-agent prototype for first-round candidate screening calls.
 
 ---
 
@@ -2099,6 +2135,8 @@ Logos for the companies, cloud services, and technologies in this portfolio, rea
 | "The team read every email and call transcript by hand to open tickets under SLA" | Assumed — check | Inferred before-state. |
 | Described as a "B2B support team" | Assumed — check | Your document says SLA-driven B2B workflows. |
 | Voice agent: outbound survey calls, answer validation, tuned turn detection and interruptions | From your document | |
+| Voice use cases: lead qualification, appointment reminders, candidate screening | Confirmed 26 Oct 2026 | Prototypes on the same engine, not deployed. Status chip says Prototype; no metrics shown. Candidate screening is not Bridgetown work. |
+| Survey results written "to the CRM" | Assumed — check | The site says "survey record". Name the CRM if answers were written into one, and the card can say so. |
 | Case cards dated "Atlas Systems · 2024–26" | Assumed — check | That is your tenure, not the project dates. Give exact project months if you prefer. |
 
 ## E. Bluekyte.AI work
@@ -2146,7 +2184,7 @@ Removed rather than invented, because there was no basis for a figure: **emails 
 | Where | What is needed |
 |---|---|
 | MCP card | Emails and transcripts a day · the hours-per-week baseline behind ~70% |
-| Voice card | Calls completed |
+| Voice card | Calls completed (Customer feedback tab) · any test-call counts for the three prototype tabs |
 | LLaMA card | Evaluation method and result |
 | Contact | Done 6 Oct 2026: every "Book a call" button opens calendly.com/dsrinivas360/30min |
 | `<head>` | Domain, for the structured data |
