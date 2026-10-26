@@ -32,7 +32,7 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css?v=16">
+  <link rel="stylesheet" href="css/styles.css?v=17">
   <!-- Structured data for search and AI engines. Every fact here is also in the visible text. Run tools/site_meta.py to set the domain and the updated date. -->
   <script type="application/ld+json">
 {
@@ -495,72 +495,25 @@
       </article>
 
       <!-- Case 04 -->
-      <article class="case case-voice">
+      <article class="case">
         <div class="case-text">
-          <p class="dwg"><b>DWG 04</b><span>Voice AI</span><span>One call engine · four industries</span></p>
-          <div class="vtabs" role="tablist" aria-label="Voice agent by industry" hidden>
-            <button type="button" role="tab" id="vt-crm" aria-controls="vp-crm" aria-selected="true">Customer feedback</button>
-            <button type="button" role="tab" id="vt-leads" aria-controls="vp-leads" aria-selected="false" tabindex="-1">Lead qualification</button>
-            <button type="button" role="tab" id="vt-health" aria-controls="vp-health" aria-selected="false" tabindex="-1">Appointment reminders</button>
-            <button type="button" role="tab" id="vt-hiring" aria-controls="vp-hiring" aria-selected="false" tabindex="-1">Candidate screening</button>
+          <p class="dwg"><b>DWG 04</b><span>Voice AI</span><span class="status">Delivered</span><span>Atlas Systems · 2024–26</span></p>
+          <h3>A survey caller that sounds like a conversation, not a phone menu</h3>
+          <p>An outbound caller that asks survey questions in natural conversation, checks each answer, and copes when people interrupt or talk over it. The hard part was live-call behavior, so I tuned turn detection, interruption handling and transcription for real callers.</p>
+          <div class="metrics two">
+            <div><span class="n" data-count="60" data-pre="~" data-suf="%">~60%</span><span class="l">of answered calls finish the survey</span></div>
+            <div><span class="n" data-count="800" data-pre="~" data-suf=" ms">~800 ms</span><span class="l">median response time</span></div>
           </div>
-
-          <div class="vpanel" id="vp-crm" role="tabpanel" aria-labelledby="vt-crm" data-end="Next question · survey record">
-            <p class="dwg"><span>Sales &amp; CRM</span><span class="status">Delivered</span><span>Atlas Systems · 2024–26</span></p>
-            <h3>A survey caller that sounds like a conversation, not a phone menu</h3>
-            <p>An outbound caller that asks survey questions in natural conversation, checks each answer, and copes when people interrupt or talk over it. The hard part was live-call behavior, so I tuned turn detection, interruption handling and transcription for real callers.</p>
-            <div class="metrics two">
-              <div><span class="n" data-count="60" data-pre="~" data-suf="%">~60%</span><span class="l">of answered calls finish the survey</span></div>
-              <div><span class="n" data-count="800" data-pre="~" data-suf=" ms">~800 ms</span><span class="l">median response time</span></div>
-            </div>
-            <ul class="decisions">
-              <li>Twilio streams call audio over WebSockets to OpenAI Realtime</li>
-              <li>Prompt-driven questions, with every answer validated</li>
-              <li>Call status and fallback URLs, so no failed call goes unrecorded</li>
-            </ul>
-            <p class="verify"><b>How I know</b><span>Every answer is validated before the next question is asked, and turn detection, interruption handling and transcription were tuned on real calls rather than test audio.</span></p>
-          </div>
-
-          <div class="vpanel" id="vp-leads" role="tabpanel" aria-labelledby="vt-leads" data-end="Qualified lead · hand-off to sales">
-            <p class="dwg"><span>Lead generation</span><span class="status testing">Prototype</span><span>Same call engine</span></p>
-            <h3>A first call that qualifies the lead before sales picks up the phone</h3>
-            <p>The agent calls new leads and asks about need, budget, timeline and who decides, in a natural back-and-forth. It skips questions that don't apply, digs into promising answers, and passes qualified leads to sales with a short summary of the call.</p>
-            <ul class="decisions">
-              <li>Dynamic questions that follow the prospect's answers</li>
-              <li>Prospects can interrupt, ask questions or change topic mid-call</li>
-              <li>Each lead becomes a structured qualification record</li>
-            </ul>
-            <p class="verify"><b>How I know</b><span>It runs on the delivered survey caller's call path. Only the prompts, the answer checks and the hand-off change.</span></p>
-          </div>
-
-          <div class="vpanel" id="vp-health" role="tabpanel" aria-labelledby="vt-health" data-end="Confirm · cancel · reschedule">
-            <p class="dwg"><span>Healthcare &amp; services</span><span class="status testing">Prototype</span><span>Same call engine</span></p>
-            <h3>Reminder calls patients can answer in their own words</h3>
-            <p>Outbound appointment reminders, confirmations and post-visit check-ins. Callers confirm, cancel or ask to reschedule by speaking normally instead of pressing keys, and the front desk gets every outcome as structured data.</p>
-            <ul class="decisions">
-              <li>Missed or failed calls flagged for retry or human follow-up</li>
-              <li>Voice and speech tuned to be clear and calm for older callers</li>
-              <li>Every outcome validated before it is logged</li>
-            </ul>
-            <p class="verify"><b>How I know</b><span>It runs on the delivered survey caller's call path. Only the prompts, the answer checks and the hand-off change.</span></p>
-          </div>
-
-          <div class="vpanel" id="vp-hiring" role="tabpanel" aria-labelledby="vt-hiring" data-end="Screening scorecard · recruiter">
-            <p class="dwg"><span>Recruitment &amp; HR</span><span class="status testing">Prototype</span><span>Same call engine</span></p>
-            <h3>First-round screening calls that leave recruiters a scorecard</h3>
-            <p>The agent asks role-specific questions drawn from the job's requirements, follows up when a reply is vague, and lets candidates ask about the role mid-call. Recruiters get the transcript and a structured scorecard instead of a call to make.</p>
-            <ul class="decisions">
-              <li>Questions generated from the job requirements</li>
-              <li>Live answer checks, with follow-ups for vague replies</li>
-              <li>Transcription and language tuned for accents and multilingual candidates</li>
-            </ul>
-            <p class="verify"><b>How I know</b><span>It runs on the delivered survey caller's call path. Only the prompts, the answer checks and the hand-off change.</span></p>
-          </div>
-
+          <ul class="decisions">
+            <li>Twilio streams call audio over WebSockets to OpenAI Realtime</li>
+            <li>Prompt-driven questions, with every answer validated</li>
+            <li>Turn detection, voice and language tuned for live calls</li>
+          </ul>
+          <p class="verify"><b>How I know</b><span>Every answer is validated before the next question is asked, and turn detection, interruption handling and transcription were tuned on real calls rather than test audio.</span></p>
           <ul class="tags"><li>Twilio</li><li>OpenAI Realtime API</li><li>WebSockets</li><li>Python</li></ul>
-          <p class="case-foot"><span>Full case study: next step</span><span>Role: architecture, prompts, call tuning</span></p>
+          <p class="case-foot"><span>Full case study: next step</span><span>Role: AI/ML Engineer</span></p>
         </div>
-        <div class="case-drawing" aria-label="Architecture: a Twilio call streams audio over WebSockets to OpenAI Realtime, which handles turn detection, interruptions and answer checks, then asks the next question and writes the result for the industry's team">
+        <div class="case-drawing" aria-label="Architecture: a Twilio call streams audio over WebSockets to OpenAI Realtime, which handles turn detection, interruptions and answer checks, then asks the next question">
           <div>
             <div class="flow">
               <span class="node">Twilio outbound call</span><span class="edge"></span>
@@ -568,12 +521,41 @@
               <span class="node key">OpenAI Realtime</span>
               <div class="fork"><span class="node">Turn detection</span><span class="node">Interruptions</span><span class="node">Answer check</span></div>
               <span class="edge"></span>
-              <span class="node key" data-voice-end>Next question · survey record</span>
+              <span class="node key">Next question · survey record</span>
             </div>
             <p class="drawing-caption">SHEET 04 · CALL PATH</p>
           </div>
         </div>
       </article>
+
+      <!-- Case 04 A–C: the same call engine in three more industries -->
+      <div class="variants" aria-labelledby="variants-title">
+        <div class="variants-head">
+          <p class="dwg"><b>DWG 04 A–C</b><span>Voice AI</span><span class="status testing">Prototypes</span></p>
+          <h3 id="variants-title">The same call engine, three more industries</h3>
+          <p>Each one runs on the survey caller's call path above. Only the prompts, the answer checks and where the call ends up change.</p>
+        </div>
+        <div class="variant-grid">
+          <article class="variant">
+            <p class="variant-tag"><b>04 A</b>Lead generation</p>
+            <h4>Qualifies the lead before sales calls</h4>
+            <p>Asks about need, budget, timeline and who decides, then hands qualified leads to sales with a call summary.</p>
+            <p class="variant-end"><span>Ends in</span>Qualified lead → sales</p>
+          </article>
+          <article class="variant">
+            <p class="variant-tag"><b>04 B</b>Healthcare &amp; services</p>
+            <h4>Reminders patients answer in their own words</h4>
+            <p>Appointment reminders and check-ins where callers confirm, cancel or reschedule by speaking. Missed calls are flagged for follow-up.</p>
+            <p class="variant-end"><span>Ends in</span>Confirm · cancel · reschedule</p>
+          </article>
+          <article class="variant">
+            <p class="variant-tag"><b>04 C</b>Recruitment &amp; HR</p>
+            <h4>First-round screening, scored</h4>
+            <p>Role-specific questions from the job requirements, follow-ups on vague answers, and transcription tuned for accents.</p>
+            <p class="variant-end"><span>Ends in</span>Screening scorecard → recruiter</p>
+          </article>
+        </div>
+      </div>
 
       <!-- Case 05 -->
       <article class="case">
@@ -961,7 +943,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=10"></script>
+<script src="js/main.js?v=11"></script>
 <!-- Vercel Web Analytics: cookie-free page views, no personal data. Switch it on under the project's Analytics tab in Vercel;
      the script is requested only on the live hosts, so local previews stay clean. -->
 <script>

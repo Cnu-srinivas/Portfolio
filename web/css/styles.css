@@ -437,24 +437,24 @@ a.btn:not(.btn-small):hover::after { transform: translateX(3px); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; }
 .tags li { font: 500 11.5px/1 var(--mono); padding: 6px 9px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--ink-2); background: var(--surface-2); transition: border-color .2s, color .2s; }
 .tags li:hover { border-color: var(--accent); color: var(--accent-text); }
-/* voice case: one engine, an industry tab per use case (tabs shown by main.js; without it the panels stack) */
-.vtabs { display: flex; flex-wrap: wrap; gap: 6px; }
-.vtabs [role="tab"] {
-  min-height: 34px; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line-2);
-  background: var(--surface); color: var(--ink-2); font: 500 13px/1 var(--body); cursor: pointer;
-  transition: background-color .2s, border-color .2s, color .2s;
+/* voice variants: the same call engine in more industries, under the voice case */
+.variants { margin-top: -6px; padding: clamp(22px, 3vw, 30px); border: 1px dashed var(--line-2); border-radius: var(--radius); display: grid; gap: 20px; }
+.variants-head { display: grid; gap: 10px; max-width: 640px; }
+.variants-head h3 { font-size: clamp(19px, 2vw, 22px); line-height: 1.2; font-weight: 700; letter-spacing: -.015em; }
+.variants-head > p:not(.dwg) { color: var(--ink-2); font-size: 15px; }
+.variant-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 880px) { .variant-grid { grid-template-columns: minmax(0, 1fr); } }
+.variant { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-s); padding: 18px; display: grid; gap: 10px; grid-template-rows: auto auto 1fr auto;
+  transition: border-color .25s, transform .25s var(--ease), box-shadow .25s; }
+@media (hover: hover) {
+  .variant:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); transform: translateY(-2px); box-shadow: var(--shadow); }
 }
-.vtabs [role="tab"]:hover { border-color: var(--ink); color: var(--ink); background: var(--sand-soft); }
-.vtabs [role="tab"][aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
-.vpanel { display: grid; gap: 16px; align-content: start; }
-.vpanel[hidden] { display: none; }
-.vpanel + .vpanel { padding-top: 16px; border-top: 1px dashed var(--line-2); }
-.vtabs:not([hidden]) ~ .vpanel { padding-top: 0; border-top: 0; }
-.vpanel > p:not(.dwg):not(.verify) { color: var(--ink-2); font-size: 15.5px; }
-@media (prefers-reduced-motion: no-preference) {
-  .vpanel.enter { animation: vpanel-in .35s var(--ease); }
-  @keyframes vpanel-in { from { opacity: 0; transform: translateY(6px); } }
-}
+.variant-tag { display: flex; align-items: center; gap: 10px; font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.variant-tag b { font-weight: 500; color: var(--accent-text); }
+.variant h4 { margin: 0; font-size: 16.5px; line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+.variant > p:not(.variant-tag):not(.variant-end) { font-size: 14px; color: var(--ink-2); }
+.variant-end { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px dashed var(--line-2); font: 500 11.5px/1.4 var(--mono); color: var(--ink); }
+.variant-end span { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .case-foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; align-items: center; font: 500 12.5px/1.4 var(--body); color: var(--ink-3); padding-top: 14px; border-top: 1px dashed var(--line-2); }
 
 /* architecture drawing panel */
