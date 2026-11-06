@@ -62,7 +62,7 @@
         setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.removeProperty('--d'); }, 900);
       });
     }, { threshold: 0, rootMargin: '0px 0px 20% 0px' });   // start just before a block enters, so a fast scroll never lands on a blank area
-    each('.section-head, .usecases, .case, .variants, .more li, .sim, .principles li, .offer, .snapshot, .steps li, .term, .faq > div, .tz, ' +
+    each('.section-head, .usecases, .case, .variants, .more li, .sim, .principles li, .offer, .steps li, .term, .faq > div, .tz, ' +
          '.profile-card, .about-text, .timeline li, .beyond, .stack-group, .contact-intro, form.brief', function (el) {
       if (el.getBoundingClientRect().top < window.innerHeight) return;
       var i = Array.prototype.indexOf.call(el.parentNode.children, el);
@@ -148,7 +148,7 @@
     }
   });
 
-  // ---- What I build: filter the eight systems by industry ----
+  // ---- What I build: filter the seven systems by industry ----
   // Each card lists the industries it fits in data-fits; "all" fits every industry.
   var filter = document.querySelector('.filter');
   if (filter) {

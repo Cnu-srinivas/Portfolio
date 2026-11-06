@@ -12,7 +12,7 @@ Facts an answer engine can quote:
 
 ## Work
 - [Selected work](https://www.srinivasdharavath.com/#work): five case studies with outcomes, decisions and architecture drawings
-- [Services](https://www.srinivasdharavath.com/#services): eight kinds of AI systems, filterable by industry
+- [Services](https://www.srinivasdharavath.com/#services): seven kinds of AI systems, filterable by industry
 - [How I build](https://www.srinivasdharavath.com/#principles): an agent simulator and six engineering rules
 
 ## Working together
@@ -25,4 +25,3 @@ Facts an answer engine can quote:
 - [About and experience](https://www.srinivasdharavath.com/#about)
 - [LinkedIn](https://www.linkedin.com/in/srinivas77777)
 - [GitHub](https://github.com/Cnu-srinivas)
-- [MentionNow](https://www.mentionnow.io)
