@@ -13,6 +13,8 @@ Everything behind my portfolio website, live at **https://www.srinivasdharavath.
 | `tools/sync_logos.py` | Copies the logos the page uses into `web/logos/` | No |
 | `tools/make_og_image.py` | Rebuilds `web/images/og.png`, the preview card shown when the site is shared on LinkedIn | No |
 | `tools/site_meta.py` | Sets the site's domain and "updated" date everywhere they appear (`--domain`, `--updated`) | No |
+| `reports/` | Research reports: `Portfolio marketing and LinkedIn visibility.md` (11 Oct 2026) is the marketing plan: LinkedIn post library, routine, channels, 12-week plan | No |
+| `research_notes/` | The sourced notes behind each report (one folder per report) | No |
 
 ## Run the site locally
 

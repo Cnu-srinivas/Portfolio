@@ -2,6 +2,8 @@
 
 *Drafted 9 Oct 2026. Goal: project leads from founders, product owners, hiring and project managers, and the freelance/fractional communities, without the post reading as "available for hire". The site at https://www.srinivasdharavath.com does that part.*
 
+> **Update, 11 Oct 2026.** The research in [`../reports/Portfolio marketing and LinkedIn visibility.md`](../reports/Portfolio%20marketing%20and%20LinkedIn%20visibility.md) supersedes several rules below: **zero hashtags** (at most one, for an event), **no link in the post or the first comment at publish time** (the website lives on the profile; add the URL in a reply when asked or after the first four hours), **never gate a lead magnet behind "comment X"**, **tag two or three contributors, not five**, and **two posting slots** (Tue/Wed ~1–1:30 pm IST for UK/EU/Gulf; Tue/Thu 5:30 pm IST until 31 Oct, **6:30 pm IST from 1 Nov** when US clocks change). The paste-ready post 1 in `linkedin-post-1.md` has been updated to match. The 12-post library, the daily routine, the channel ranking and the 12-week plan live in the report.
+
 ## What the feed rewards right now (research, Oct 2026)
 
 - **Links.** A bare link in the post body still starts slower; a link that adds information is tolerated. Safest pattern: value-first post, link in the first comment.

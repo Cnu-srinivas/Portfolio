@@ -383,6 +383,7 @@ It runs alongside the blueprint's 30-day build. The targets are goals to steer b
 | Date | What changed | Result |
 |---|---|---|
 | 2026-09-22 | Global plan created. Starting point: client-readiness 2.6/10; no offers, no trust page, no lead channels | — |
+| 2026-10-11 | Channel research (section 8 refined): referral system, community answering, Braintrust/Contra + Upwork AI consulting, micro-outreach to lists under 50, one open-source artefact a quarter, local talk → CFPs; SciPy India 2026 CFP closes 19 Oct. Full plan in `reports/Portfolio marketing and LinkedIn visibility.md` | — |
 | | | |
 
 ---
